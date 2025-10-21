@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-15 21:49+0000\n"
-"PO-Revision-Date: 2024-01-30 16:38+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Swedish <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-mouse-touchpad/sv/>\n"
+"PO-Revision-Date: 2025-10-22 05:26+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <https://l10n.elementaryos.org/projects/settings/"
+"mouse-touchpad/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-02-16 06:46+0000\n"
 
 #: src/Plug.vala:53
@@ -30,31 +30,27 @@ msgstr "Ställ in mus och pekplatta"
 
 #: src/Plug.vala:136 src/Views/Clicking.vala:28
 msgid "Clicking"
-msgstr ""
+msgstr "Klicka på"
 
 #: src/Plug.vala:137 src/Views/Clicking.vala:109
 msgid "Double-click Speed"
-msgstr ""
+msgstr "Dubbelklicka på Hastighet"
 
 #: src/Plug.vala:138 src/Views/Clicking.vala:119
 msgid "Dwell Click"
-msgstr ""
+msgstr "Dwell Klicka"
 
 #: src/Plug.vala:139 src/Views/Clicking.vala:35
-#, fuzzy
-#| msgid "Primary button"
 msgid "Primary Button"
-msgstr "Primärknapp"
+msgstr "Huvudknapp"
 
 #: src/Plug.vala:140 src/Views/Clicking.vala:78
 msgid "Long-press Secondary Click"
-msgstr ""
+msgstr "Lång tryckning Sekundär klickning"
 
 #: src/Plug.vala:141 src/Views/Clicking.vala:178
-#, fuzzy
-#| msgid "Middle click paste"
 msgid "Middle Click Paste"
-msgstr "Mellanklicksklistra"
+msgstr "Mittenklick Klistra in"
 
 #: src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145 src/Plug.vala:146
 #: src/Views/Mouse.vala:11
@@ -63,42 +59,33 @@ msgstr "Mus"
 
 #: src/Plug.vala:144 src/Plug.vala:154 src/Views/Mouse.vala:27
 #: src/Views/Touchpad.vala:33
-#, fuzzy
-#| msgid "Pointer speed"
 msgid "Pointer Speed"
-msgstr "Markörens hastighet"
+msgstr "Pekarens hastighet"
 
 #: src/Plug.vala:145 src/Views/Mouse.vala:59
-#, fuzzy
 msgid "Pointer Acceleration"
-msgstr "Marköracceleration:"
+msgstr "Acceleration av pekare"
 
 #: src/Plug.vala:146 src/Plug.vala:159 src/Views/Mouse.vala:45
 #: src/Views/Touchpad.vala:124
-#, fuzzy
-#| msgid "Natural scrolling"
 msgid "Natural Scrolling"
-msgstr "Naturlig skrollning"
+msgstr "Naturlig rullning"
 
 #: src/Plug.vala:148 src/Views/Pointing.vala:10
 msgid "Pointing"
-msgstr ""
+msgstr "Riktning"
 
 #: src/Plug.vala:149 src/Views/Pointing.vala:87
-#, fuzzy
-#| msgid "Pointer speed:"
 msgid "Pointer Size"
-msgstr "Markörens hastighet:"
+msgstr "Storlek på pekare"
 
 #: src/Plug.vala:150 src/Views/Pointing.vala:78
-#, fuzzy
-#| msgid "Reveal pointer"
 msgid "Reveal Pointer"
-msgstr "Visa markör"
+msgstr "Avslöjande pekare"
 
 #: src/Plug.vala:151 src/Views/Pointing.vala:22
 msgid "Control Pointer Using Keypad"
-msgstr ""
+msgstr "Styr pekaren med hjälp av knappsatsen"
 
 #: src/Plug.vala:153 src/Plug.vala:154 src/Plug.vala:155 src/Plug.vala:156
 #: src/Plug.vala:157 src/Plug.vala:158 src/Plug.vala:159 src/Plug.vala:160
@@ -112,31 +99,28 @@ msgstr "Knacka för att klicka"
 
 #: src/Plug.vala:156 src/Views/Touchpad.vala:76
 msgid "Double-tap and move to drag"
-msgstr ""
+msgstr "Dubbelknacka och flytta för att dra"
 
 #: src/Plug.vala:157 src/Views/Touchpad.vala:66
-#, fuzzy
-#| msgid "Physical clicking:"
 msgid "Physical Secondary Clicking"
-msgstr "Fysisk klickning:"
+msgstr "Fysisk sekundär klickning"
 
 #: src/Plug.vala:158 src/Views/Touchpad.vala:84
 msgid "Scroll Method"
-msgstr ""
+msgstr "Rullningsmetod"
 
 #: src/Plug.vala:160
-#, fuzzy
 msgid "Ignore while typing"
-msgstr "Inaktivera medan du skriver:"
+msgstr "Ignorera när du skriver"
 
 #: src/Plug.vala:161
 msgid "Ignore when mouse is connected"
-msgstr ""
+msgstr "Ignorera när musen är ansluten"
 
 #: src/Plug.vala:164 src/Plug.vala:165 src/Plug.vala:166 src/Plug.vala:167
 #: src/Views/Gestures.vala:25
 msgid "Gestures"
-msgstr ""
+msgstr "Gester"
 
 #: src/Plug.vala:165 src/Views/Gestures.vala:74 src/Views/Gestures.vala:83
 msgid "Multitasking View"
@@ -144,11 +128,11 @@ msgstr "Multitaskingvy"
 
 #: src/Plug.vala:166
 msgid "Switch Workspaces"
-msgstr ""
+msgstr "Byt arbetsytor"
 
 #: src/Plug.vala:167
 msgid "Maximize Window"
-msgstr ""
+msgstr "Maximera fönstret"
 
 #: src/Views/Clicking.vala:26
 msgid "Behavior"
@@ -168,30 +152,26 @@ msgstr "Höger"
 
 #: src/Views/Clicking.vala:80
 msgid "Long-press and release the primary button to secondary click"
-msgstr ""
+msgstr "Tryck länge och släpp den primära knappen för att klicka sekundärt"
 
 #: src/Views/Clicking.vala:111
 msgid "How quickly two clicks in a row will be treated as a double-click"
-msgstr ""
+msgstr "Hur snabbt två klick i rad kommer att behandlas som ett dubbelklick"
 
 #: src/Views/Clicking.vala:121
 msgid "Hold the pointer still to automatically click"
-msgstr ""
+msgstr "Håll pekaren stilla för att klicka automatiskt"
 
 #: src/Views/Clicking.vala:180
-#, fuzzy
-#| msgid ""
-#| "Middle or three-finger clicking on an input will paste any selected text"
 msgid "Middle or three-finger click on an input to paste selected text"
 msgstr ""
-"Mellan- eller trefingerklick på ett inmatningsfält kommer klistra in "
+"Klicka med mitten- eller trefingret på en inmatning för att klistra in "
 "markerad text"
 
 #: src/Views/Clicking.vala:245 src/Views/Clicking.vala:250
-#, fuzzy, c-format
-#| msgid "seconds"
+#, c-format
 msgid "%.1f seconds"
-msgstr "sekunder"
+msgstr "%.1f sekunder"
 
 #: src/Views/Gestures.vala:35 src/Views/Gestures.vala:46
 #: src/Views/Gestures.vala:73 src/Views/Gestures.vala:82
@@ -201,35 +181,33 @@ msgstr "Gör ingenting"
 
 #: src/Views/Gestures.vala:36 src/Views/Gestures.vala:47
 msgid "Switch to workspace"
-msgstr ""
+msgstr "Byt till arbetsyta"
 
 #: src/Views/Gestures.vala:37 src/Views/Gestures.vala:48
 msgid "Move active window to workspace"
-msgstr ""
+msgstr "Flytta det aktiva fönstret till arbetsytan"
 
 #: src/Views/Gestures.vala:38 src/Views/Gestures.vala:49
 msgid "Cycle windows"
-msgstr ""
+msgstr "Växla fönster"
 
 #: src/Views/Gestures.vala:40 src/Views/Gestures.vala:76
 #: src/Views/Gestures.vala:111
 msgid "Three fingers:"
-msgstr ""
+msgstr "Tre fingrar:"
 
 #: src/Views/Gestures.vala:51 src/Views/Gestures.vala:85
 #: src/Views/Gestures.vala:120
-#, fuzzy
-#| msgid "Two-finger"
 msgid "Four fingers:"
-msgstr "Två fingrar"
+msgstr "Fyra fingrar:"
 
 #: src/Views/Gestures.vala:66
 msgid "Swipe Horizontally"
-msgstr ""
+msgstr "Svep horisontellt"
 
 #: src/Views/Gestures.vala:100
 msgid "Swipe Up"
-msgstr ""
+msgstr "Svep upp"
 
 #: src/Views/Gestures.vala:109 src/Views/Gestures.vala:118
 msgid "Zoom"
@@ -237,11 +215,11 @@ msgstr "Zooma in"
 
 #: src/Views/Gestures.vala:135
 msgid "Pinch"
-msgstr ""
+msgstr "Nypa"
 
 #: src/Views/Gestures.vala:162 src/Views/Gestures.vala:163
 msgid "Toggle maximized"
-msgstr ""
+msgstr "Växla maximerad"
 
 #: src/Views/Mouse.vala:9
 msgid "Devices"
@@ -250,12 +228,12 @@ msgstr "Enheter"
 #: src/Views/Mouse.vala:23 src/Views/Pointing.vala:32
 #: src/Views/Touchpad.vala:29
 msgid "Slower"
-msgstr ""
+msgstr "Långsammare"
 
 #: src/Views/Mouse.vala:25 src/Views/Pointing.vala:34
 #: src/Views/Touchpad.vala:31
 msgid "Faster"
-msgstr ""
+msgstr "Snabbare"
 
 #: src/Views/Mouse.vala:31
 msgid "Hardware default"
@@ -271,11 +249,12 @@ msgstr "Adaptiv"
 
 #: src/Views/Mouse.vala:47 src/Views/Touchpad.vala:126
 msgid "Scrolling moves the content, not the view"
-msgstr ""
+msgstr "Skrollning flyttar innehållet, inte vyn"
 
 #: src/Views/Pointing.vala:23
 msgid "This disables both levels of keys on the numeric keypad"
 msgstr ""
+"Detta inaktiverar båda nivåerna av knappar på det numeriska tangentbordet"
 
 #: src/Views/Pointing.vala:37
 msgid "Small"
@@ -283,7 +262,7 @@ msgstr "Liten"
 
 #: src/Views/Pointing.vala:48
 msgid "Medium"
-msgstr ""
+msgstr "Medium"
 
 #: src/Views/Pointing.vala:59
 msgid "Large"
@@ -300,7 +279,7 @@ msgstr "Multi-touch"
 
 #: src/Views/Touchpad.vala:56
 msgid "Areas"
-msgstr ""
+msgstr "Områden"
 
 #: src/Views/Touchpad.vala:89
 msgid "Two-finger"
@@ -312,20 +291,19 @@ msgstr "Kant"
 
 #: src/Views/Touchpad.vala:135
 msgid "Ignore"
-msgstr ""
+msgstr "Ignorera"
 
 #: src/Views/Touchpad.vala:137
-#, fuzzy
 msgid "While typing"
-msgstr "Inaktivera medan du skriver:"
+msgstr "Medan du skriver"
 
 #: src/Views/Touchpad.vala:138
 msgid "When mouse is connected"
-msgstr ""
+msgstr "När musen är ansluten"
 
 #: src/Views/Touchpad.vala:149
 msgid "Tapping"
-msgstr ""
+msgstr "Tappning"
 
 #~ msgid "Primary button"
 #~ msgstr "Primärknapp"

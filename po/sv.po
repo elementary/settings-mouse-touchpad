@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-15 21:49+0000\n"
-"PO-Revision-Date: 2025-10-30 09:55+0000\n"
+"PO-Revision-Date: 2025-10-31 10:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/settings/"
 "mouse-touchpad/sv/>\n"
@@ -26,31 +26,31 @@ msgstr "Mus och pekplatta"
 
 #: src/Plug.vala:54
 msgid "Configure mouse and touchpad"
-msgstr "Ställ in mus och pekplatta"
+msgstr "Konfigurera mus och pekplatta"
 
 #: src/Plug.vala:136 src/Views/Clicking.vala:28
 msgid "Clicking"
-msgstr "Klicka på"
+msgstr "Klickning"
 
 #: src/Plug.vala:137 src/Views/Clicking.vala:109
 msgid "Double-click Speed"
-msgstr "Dubbelklicka på Hastighet"
+msgstr "Hastighet för dubbelklick"
 
 #: src/Plug.vala:138 src/Views/Clicking.vala:119
 msgid "Dwell Click"
-msgstr "Dwell Klicka"
+msgstr "Uppehållsklick"
 
 #: src/Plug.vala:139 src/Views/Clicking.vala:35
 msgid "Primary Button"
-msgstr "Huvudknapp"
+msgstr "Primärknapp"
 
 #: src/Plug.vala:140 src/Views/Clicking.vala:78
 msgid "Long-press Secondary Click"
-msgstr "Lång tryckning Sekundär klickning"
+msgstr "Sekundär klick med lång tryckning"
 
 #: src/Plug.vala:141 src/Views/Clicking.vala:178
 msgid "Middle Click Paste"
-msgstr "Mittenklick Klistra in"
+msgstr "Klistra in med mittenklick"
 
 #: src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145 src/Plug.vala:146
 #: src/Views/Mouse.vala:11
@@ -60,11 +60,11 @@ msgstr "Mus"
 #: src/Plug.vala:144 src/Plug.vala:154 src/Views/Mouse.vala:27
 #: src/Views/Touchpad.vala:33
 msgid "Pointer Speed"
-msgstr "Pekarens hastighet"
+msgstr "Pekarhastighet"
 
 #: src/Plug.vala:145 src/Views/Mouse.vala:59
 msgid "Pointer Acceleration"
-msgstr "Acceleration av pekare"
+msgstr "Pekaracceleration"
 
 #: src/Plug.vala:146 src/Plug.vala:159 src/Views/Mouse.vala:45
 #: src/Views/Touchpad.vala:124
@@ -73,15 +73,15 @@ msgstr "Naturlig rullning"
 
 #: src/Plug.vala:148 src/Views/Pointing.vala:10
 msgid "Pointing"
-msgstr "Riktning"
+msgstr "Pekning"
 
 #: src/Plug.vala:149 src/Views/Pointing.vala:87
 msgid "Pointer Size"
-msgstr "Storlek på pekare"
+msgstr "Pekarstorlek"
 
 #: src/Plug.vala:150 src/Views/Pointing.vala:78
 msgid "Reveal Pointer"
-msgstr "Avslöjande pekare"
+msgstr "Visa pekare"
 
 #: src/Plug.vala:151 src/Views/Pointing.vala:22
 msgid "Control Pointer Using Keypad"
@@ -95,11 +95,11 @@ msgstr "Pekplatta"
 
 #: src/Plug.vala:155 src/Views/Touchpad.vala:72
 msgid "Tap to click"
-msgstr "Knacka för att klicka"
+msgstr "Tryck för att klicka"
 
 #: src/Plug.vala:156 src/Views/Touchpad.vala:76
 msgid "Double-tap and move to drag"
-msgstr "Dubbelknacka och flytta för att dra"
+msgstr "Dubbeltryck och flytta för att dra"
 
 #: src/Plug.vala:157 src/Views/Touchpad.vala:66
 msgid "Physical Secondary Clicking"
@@ -128,7 +128,7 @@ msgstr "Multitaskingvy"
 
 #: src/Plug.vala:166
 msgid "Switch Workspaces"
-msgstr "Byt arbetsytor"
+msgstr "Växla arbetsytor"
 
 #: src/Plug.vala:167
 msgid "Maximize Window"
@@ -152,7 +152,7 @@ msgstr "Höger"
 
 #: src/Views/Clicking.vala:80
 msgid "Long-press and release the primary button to secondary click"
-msgstr "Tryck länge och släpp den primära knappen för att klicka sekundärt"
+msgstr "Tryck länge och släpp den primära knappen för sekundärklick"
 
 #: src/Views/Clicking.vala:111
 msgid "How quickly two clicks in a row will be treated as a double-click"
@@ -165,7 +165,7 @@ msgstr "Håll pekaren stilla för att klicka automatiskt"
 #: src/Views/Clicking.vala:180
 msgid "Middle or three-finger click on an input to paste selected text"
 msgstr ""
-"Klicka med mitten- eller trefingret på en inmatning för att klistra in "
+"Klicka med mitten- eller med tre fingrar på en inmatning för att klistra in "
 "markerad text"
 
 #: src/Views/Clicking.vala:245 src/Views/Clicking.vala:250
@@ -181,7 +181,7 @@ msgstr "Gör ingenting"
 
 #: src/Views/Gestures.vala:36 src/Views/Gestures.vala:47
 msgid "Switch to workspace"
-msgstr "Byt till arbetsyta"
+msgstr "Växla till arbetsyta"
 
 #: src/Views/Gestures.vala:37 src/Views/Gestures.vala:48
 msgid "Move active window to workspace"
@@ -207,7 +207,7 @@ msgstr "Svep horisontellt"
 
 #: src/Views/Gestures.vala:100
 msgid "Swipe Up"
-msgstr "Svep upp"
+msgstr "Svep uppåt"
 
 #: src/Views/Gestures.vala:109 src/Views/Gestures.vala:118
 msgid "Zoom"
@@ -215,11 +215,11 @@ msgstr "Zooma"
 
 #: src/Views/Gestures.vala:135
 msgid "Pinch"
-msgstr "Nypa"
+msgstr "Nyp"
 
 #: src/Views/Gestures.vala:162 src/Views/Gestures.vala:163
 msgid "Toggle maximized"
-msgstr "Växla maximerad"
+msgstr "Växla maximerat"
 
 #: src/Views/Mouse.vala:9
 msgid "Devices"
@@ -249,7 +249,7 @@ msgstr "Adaptiv"
 
 #: src/Views/Mouse.vala:47 src/Views/Touchpad.vala:126
 msgid "Scrolling moves the content, not the view"
-msgstr "Skrollning flyttar innehållet, inte vyn"
+msgstr "Rullning flyttar innehållet, inte vyn"
 
 #: src/Views/Pointing.vala:23
 msgid "This disables both levels of keys on the numeric keypad"
@@ -262,7 +262,7 @@ msgstr "Liten"
 
 #: src/Views/Pointing.vala:48
 msgid "Medium"
-msgstr "Medium"
+msgstr "Medel"
 
 #: src/Views/Pointing.vala:59
 msgid "Large"
@@ -275,7 +275,7 @@ msgstr ""
 
 #: src/Views/Touchpad.vala:40
 msgid "Multitouch"
-msgstr "Multi-touch"
+msgstr "Multipekskärm"
 
 #: src/Views/Touchpad.vala:56
 msgid "Areas"
@@ -303,7 +303,7 @@ msgstr "När musen är ansluten"
 
 #: src/Views/Touchpad.vala:149
 msgid "Tapping"
-msgstr "Tappning"
+msgstr "Knackning"
 
 #~ msgid "Primary button"
 #~ msgstr "Primärknapp"

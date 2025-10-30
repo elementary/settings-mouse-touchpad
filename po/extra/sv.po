@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-15 21:49+0000\n"
-"PO-Revision-Date: 2025-10-22 09:59+0000\n"
+"PO-Revision-Date: 2025-10-31 10:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/settings/"
 "mouse-touchpad-plug-extra/sv/>\n"
@@ -25,7 +25,7 @@ msgstr "Inställningar för mus och pekplatta"
 
 #: data/mouse-touchpad.metainfo.xml.in:11
 msgid "Configure mouse and touchpad"
-msgstr "Ställ in mus och pekplatta"
+msgstr "Konfigurera mus och pekplatta"
 
 #: data/mouse-touchpad.metainfo.xml.in:40
 msgid "elementary, Inc."
@@ -68,8 +68,8 @@ msgid ""
 "Add \"Cycle windows\" and \"Move active window to workspace\" as gesture "
 "options"
 msgstr ""
-"Lägg till \"Växla fönster\" och "
-"\"Flytta det aktiva fönstret till arbetsytan\" som gestalternativ"
+"Lägg till \"Växla fönster\" och \"Flytta aktivt fönster till arbetsyta\" som "
+"gestalternativ"
 
 #: data/mouse-touchpad.metainfo.xml.in:96
 msgid "Update for OS 7"
@@ -87,11 +87,11 @@ msgstr "Ny växling för \"Dubbeltryck och flytta för att dra\""
 #: data/mouse-touchpad.metainfo.xml.in:119
 #: data/mouse-touchpad.metainfo.xml.in:124
 msgid "Multitouch gesture options"
-msgstr "Alternativ för multitouch-gester"
+msgstr "Alternativ för flertrycksgester"
 
 #: data/mouse-touchpad.metainfo.xml.in:123
 msgid "Add more snap points to pointer speed sliders"
-msgstr "Lägg till fler fästpunkter till reglagen för pekarhastighet"
+msgstr "Lägg till fler fästpunkter till draglister för pekarhastighet"
 
 #: data/mouse-touchpad.metainfo.xml.in:125
 msgid "Redesigned touchpad settings"

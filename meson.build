@@ -1,7 +1,7 @@
 project(
     'mouse-touchpad',
     'vala', 'c',
-    version: '8.0.2'
+    version: '8.0.3'
 )
 
 gettext_name = 'io.elementary.settings.' + meson.project_name()

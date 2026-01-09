@@ -36,38 +36,32 @@ public class MouseTouchpad.PointingView : Switchboard.SettingsPage {
         var cursor_size_24 = new Gtk.CheckButton () {
             action_name = "pointing.cursor-size",
             action_target = new Variant.int32 (24),
+            child = new Gtk.Image.from_icon_name ("mouse-touchpad-pointing-symbolic") {
+                pixel_size = 24
+            },
             tooltip_text = _("Small")
         };
         cursor_size_24.add_css_class ("image-button");
 
-        var cursor_size_24_image = new Gtk.Image.from_icon_name ("mouse-touchpad-pointing-symbolic") {
-            pixel_size = 24
-        };
-        cursor_size_24_image.set_parent (cursor_size_24);
-
         var cursor_size_32 = new Gtk.CheckButton () {
             action_name = "pointing.cursor-size",
             action_target = new Variant.int32 (32),
+            child = new Gtk.Image.from_icon_name ("mouse-touchpad-pointing-symbolic") {
+                pixel_size = 32
+            },
             tooltip_text = _("Medium")
         };
         cursor_size_32.add_css_class ("image-button");
 
-        var cursor_size_32_image = new Gtk.Image.from_icon_name ("mouse-touchpad-pointing-symbolic") {
-            pixel_size = 32
-        };
-        cursor_size_32_image.set_parent (cursor_size_32);
-
         var cursor_size_48 = new Gtk.CheckButton () {
             action_name = "pointing.cursor-size",
             action_target = new Variant.int32 (48),
+            child = new Gtk.Image.from_icon_name ("mouse-touchpad-pointing-symbolic") {
+                pixel_size = 48
+            },
             tooltip_text = _("Large")
         };
         cursor_size_48.add_css_class ("image-button");
-
-        var cursor_size_48_image = new Gtk.Image.from_icon_name ("mouse-touchpad-pointing-symbolic") {
-            pixel_size = 48
-        };
-        cursor_size_48_image.set_parent (cursor_size_48);
 
         var cursor_size_box = new Gtk.Box (HORIZONTAL, 24);
         cursor_size_box.append (cursor_size_24);

@@ -63,10 +63,14 @@ public class MouseTouchpad.PointingView : Switchboard.SettingsPage {
         };
         cursor_size_48.add_css_class ("image-button");
 
-        var cursor_size_box = new Gtk.Box (HORIZONTAL, 24);
+        var cursor_size_box = new Granite.Box (HORIZONTAL, DOUBLE);
         cursor_size_box.append (cursor_size_24);
         cursor_size_box.append (cursor_size_32);
         cursor_size_box.append (cursor_size_48);
+
+        var cursor_size_header = new Granite.HeaderLabel (_("Pointer Size")) {
+            mnemonic_widget = cursor_size_box
+        };
 
         var reveal_pointer_switch = new Gtk.Switch () {
             halign = END,
@@ -82,7 +86,7 @@ public class MouseTouchpad.PointingView : Switchboard.SettingsPage {
             row_spacing = 6
         };
 
-        content_area.attach (new Granite.HeaderLabel (_("Pointer Size")), 0, 0);
+        content_area.attach (cursor_size_header, 0, 0);
         content_area.attach (cursor_size_box, 0, 1);
 
         content_area.attach (reveal_pointer_label, 0, 2);

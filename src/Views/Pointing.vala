@@ -34,6 +34,8 @@ public class MouseTouchpad.PointingView : Switchboard.SettingsPage {
         pointer_speed_scale.add_mark (990, BOTTOM, _("Faster"));
 
         var cursor_size_24 = new Gtk.CheckButton () {
+            action_name = "pointing.cursor-size",
+            action_target = new Variant.int32 (24),
             tooltip_text = _("Small")
         };
         cursor_size_24.add_css_class ("image-button");
@@ -44,7 +46,8 @@ public class MouseTouchpad.PointingView : Switchboard.SettingsPage {
         cursor_size_24_image.set_parent (cursor_size_24);
 
         var cursor_size_32 = new Gtk.CheckButton () {
-            group = cursor_size_24,
+            action_name = "pointing.cursor-size",
+            action_target = new Variant.int32 (32),
             tooltip_text = _("Medium")
         };
         cursor_size_32.add_css_class ("image-button");
@@ -55,7 +58,8 @@ public class MouseTouchpad.PointingView : Switchboard.SettingsPage {
         cursor_size_32_image.set_parent (cursor_size_32);
 
         var cursor_size_48 = new Gtk.CheckButton () {
-            group = cursor_size_24,
+            action_name = "pointing.cursor-size",
+            action_target = new Variant.int32 (48),
             tooltip_text = _("Large")
         };
         cursor_size_48.add_css_class ("image-button");
@@ -119,27 +123,9 @@ public class MouseTouchpad.PointingView : Switchboard.SettingsPage {
         var interface_settings = new GLib.Settings ("org.gnome.desktop.interface");
         interface_settings.bind ("locate-pointer", reveal_pointer_switch, "active", DEFAULT);
 
-        switch (interface_settings.get_int ("cursor-size")) {
-            case 32:
-                cursor_size_32.active = true;
-                break;
-            case 48:
-                cursor_size_48.active = true;
-                break;
-            default:
-                cursor_size_24.active = true;
-        }
+        var action_group = new SimpleActionGroup ();
+        action_group.add_action (interface_settings.create_action ("cursor-size"));
 
-        cursor_size_24.toggled.connect (() => {
-            interface_settings.set_int ("cursor-size", 24);
-        });
-
-        cursor_size_32.toggled.connect (() => {
-            interface_settings.set_int ("cursor-size", 32);
-        });
-
-        cursor_size_48.toggled.connect (() => {
-            interface_settings.set_int ("cursor-size", 48);
-        });
+        insert_action_group ("pointing", action_group);
     }
 }

@@ -7,7 +7,7 @@ public class MouseTouchpad.PointingStickView : Switchboard.SettingsPage {
     public PointingStickView () {
         Object (
             header: _("Devices"),
-            icon: new ThemedIcon ("input-pointingstick"),
+            icon: new ThemedIcon ("mouse-touchpad-pointingstick"),
             title: _("Pointing Stick")
         );
     }

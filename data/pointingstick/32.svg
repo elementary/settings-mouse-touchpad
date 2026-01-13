@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient3174" x1="24" x2="24" y1="6.24" y2="41.76" gradientTransform="matrix(.67568 0 0 .67568 -.21622 -.21621)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#fff" stop-opacity=".23529" offset=".025915"/>
+   <stop stop-color="#fff" stop-opacity=".15686" offset=".95833"/>
+   <stop stop-color="#fff" stop-opacity=".39216" offset="1"/>
+  </linearGradient>
+  <radialGradient id="radialGradient2976" cx="4.993" cy="43.5" r="2.5" gradientTransform="matrix(2.0038 0 0 1.4 27.988 -17.4)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#181818" offset="0"/>
+   <stop stop-color="#181818" stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <radialGradient id="radialGradient2978" cx="4.993" cy="43.5" r="2.5" gradientTransform="matrix(2.0038 0 0 1.4 -20.012 -104.4)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#181818" offset="0"/>
+   <stop stop-color="#181818" stop-opacity="0" offset="1"/>
+  </radialGradient>
+  <linearGradient id="linearGradient2980" x1="25.058" x2="25.058" y1="47.028" y2="39.999" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#181818" stop-opacity="0" offset="0"/>
+   <stop stop-color="#181818" offset=".5"/>
+   <stop stop-color="#181818" stop-opacity="0" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient11527-6-5" x1="2035.2" x2="2035.2" y1="3208.1" y2="3242" gradientTransform="matrix(.57485 0 0 .42976 -1156 -1369.8)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#ed5353" offset="0"/>
+   <stop stop-color="#c6262e" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient12398-3" x1="71.204" x2="71.204" y1="6.2376" y2="44.341" gradientTransform="matrix(.35135 0 0 .35135 -9.2037 7.0907)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#fff" stop-opacity=".23529" offset=".50776"/>
+   <stop stop-color="#fff" stop-opacity=".15686" offset=".83457"/>
+   <stop stop-color="#fff" stop-opacity=".39216" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient1" x1="16.875" x2="16.875" y1="2.625" y2="29.375" gradientTransform="matrix(0,4.1109,-5.0469,0,66.828,-38.866)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#4d4d4d" offset="0"/>
+   <stop stop-color="#333" offset="1"/>
+  </linearGradient>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="matrix(.7 0 0 .33333 -.8 15.333)">
+  <g transform="matrix(1.0526 0 0 1.2857 -1.2632 -13.429)" opacity=".4">
+   <rect x="38" y="40" width="5" height="7" fill="url(#radialGradient2976)"/>
+   <rect transform="scale(-1)" x="-10" y="-47" width="5" height="7" fill="url(#radialGradient2978)"/>
+   <rect x="10" y="40" width="28" height="7" fill="url(#linearGradient2980)"/>
+  </g>
+ </g>
+ <rect x="2.5" y="2.5" width="27" height="27" rx="3" ry="3" color="#000000" color-rendering="auto" fill="url(#linearGradient1)" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
+ <rect x="3.5" y="3.5" width="25" height="25" rx="2" ry="2" fill="none" opacity=".15" stroke="url(#linearGradient3174)" stroke-linecap="round" stroke-linejoin="round"/>
+ <rect x="2.5" y="2.5" width="27" height="27" rx="3" ry="3" color="#000000" fill="none" opacity=".7" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round"/>
+ <path d="m16 8.5c-4.69 0-8.5 3.81-8.5 8.5s3.81 8.5 8.5 8.5 8.5-3.81 8.5-8.5-3.81-8.5-8.5-8.5z" color="#000000" fill="#1a1a1a" opacity=".15"/>
+ <path d="m16 9.5c-4.1382 0-7.5 3.3618-7.5 7.5s3.3618 7.5 7.5 7.5 7.5-3.3618 7.5-7.5-3.3618-7.5-7.5-7.5z" color="#000000" fill="#1a1a1a" opacity=".3"/>
+ <path d="m16 8.5c-4.1382 0-7.5 3.3618-7.5 7.5s3.3618 7.5 7.5 7.5 7.5-3.3618 7.5-7.5-3.3618-7.5-7.5-7.5z" color="#000000" fill="url(#linearGradient11527-6-5)" opacity=".99"/>
+ <path d="m16 8.5c-4.1382 0-7.5 3.3618-7.5 7.5s3.3618 7.5 7.5 7.5 7.5-3.3618 7.5-7.5-3.3618-7.5-7.5-7.5z" color="#000000" fill="none" opacity=".5" stroke="#7a0000" stroke-linecap="round" stroke-linejoin="round"/>
+ <path d="m22.5 16c0 3.59-2.9104 6.5002-6.4999 6.5002-3.5899 0-6.5001-2.9103-6.5001-6.5002 0-3.5898 2.9102-6.4998 6.5001-6.4998 3.5896 0 6.4999 2.91 6.4999 6.4998z" color="#000000" fill="none" opacity=".4" stroke="url(#linearGradient12398-3)" stroke-linecap="round" stroke-linejoin="round"/>
+ <g transform="translate(0 .5)">
+  <circle cx="13.971" cy="14.109" r="1" fill="#fafafa" opacity=".15" style="-inkscape-stroke:none;paint-order:stroke fill markers"/>
+  <circle cx="13.971" cy="13.109" r="1" fill="#c6262e" style="-inkscape-stroke:none;paint-order:stroke fill markers"/>
+  <circle cx="17.971" cy="14.109" r="1" fill="#fafafa" opacity=".15" style="-inkscape-stroke:none;paint-order:stroke fill markers"/>
+  <circle cx="17.971" cy="13.109" r="1" fill="#c6262e" style="-inkscape-stroke:none;paint-order:stroke fill markers"/>
+  <circle cx="17.971" cy="18.109" r="1" fill="#fafafa" opacity=".15" style="-inkscape-stroke:none;paint-order:stroke fill markers"/>
+  <circle cx="17.971" cy="17.109" r="1" fill="#c6262e" style="-inkscape-stroke:none;paint-order:stroke fill markers"/>
+  <circle cx="13.971" cy="18.109" r="1" fill="#fafafa" opacity=".15" style="-inkscape-stroke:none;paint-order:stroke fill markers"/>
+  <circle cx="13.971" cy="17.109" r="1" fill="#c6262e" style="-inkscape-stroke:none;paint-order:stroke fill markers"/>
+  <circle cx="11.971" cy="16.109" r="1" fill="#fafafa" opacity=".15" style="-inkscape-stroke:none;paint-order:stroke fill markers"/>
+  <circle cx="11.971" cy="15.109" r="1" fill="#c6262e" style="-inkscape-stroke:none;paint-order:stroke fill markers"/>
+  <circle cx="15.971" cy="16.109" r="1" fill="#fafafa" opacity=".15" style="-inkscape-stroke:none;paint-order:stroke fill markers"/>
+  <circle cx="15.971" cy="15.109" r="1" fill="#c6262e" style="-inkscape-stroke:none;paint-order:stroke fill markers"/>
+  <circle cx="19.971" cy="16.109" r="1" fill="#fafafa" opacity=".15" style="-inkscape-stroke:none;paint-order:stroke fill markers"/>
+  <circle cx="19.971" cy="15.109" r="1" fill="#c6262e" style="-inkscape-stroke:none;paint-order:stroke fill markers"/>
+  <circle cx="15.971" cy="20.109" r="1" fill="#fafafa" opacity=".15" style="-inkscape-stroke:none;paint-order:stroke fill markers"/>
+  <circle cx="15.971" cy="19.109" r="1" fill="#c6262e" style="-inkscape-stroke:none;paint-order:stroke fill markers"/>
+  <circle cx="15.971" cy="12.109" r="1" fill="#fafafa" opacity=".15" style="-inkscape-stroke:none;paint-order:stroke fill markers"/>
+  <circle cx="15.971" cy="11.109" r="1" fill="#c6262e" style="-inkscape-stroke:none;paint-order:stroke fill markers"/>
+ </g>
+</svg>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="32" height="32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="32" height="32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
  <defs>
   <linearGradient id="linearGradient3174" x1="24" x2="24" y1="6.24" y2="41.76" gradientTransform="matrix(.67568 0 0 .67568 -.21622 -.21621)" gradientUnits="userSpaceOnUse">
    <stop stop-color="#fff" offset="0"/>
@@ -30,7 +30,7 @@
    <stop stop-color="#fff" stop-opacity=".15686" offset=".83457"/>
    <stop stop-color="#fff" stop-opacity=".39216" offset="1"/>
   </linearGradient>
-  <linearGradient id="linearGradient1" x1="16.875" x2="16.875" y1="2.625" y2="29.375" gradientTransform="matrix(0,4.1109,-5.0469,0,66.828,-38.866)" gradientUnits="userSpaceOnUse">
+  <linearGradient id="linearGradient1" x1="9.9863" x2="16.655" y1="9.7586" y2="9.7586" gradientTransform="matrix(0,4.1109,-5.0469,0,66.828,-38.866)" gradientUnits="userSpaceOnUse">
    <stop stop-color="#4d4d4d" offset="0"/>
    <stop stop-color="#333" offset="1"/>
   </linearGradient>

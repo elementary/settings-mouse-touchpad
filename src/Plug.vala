@@ -23,6 +23,7 @@ public class MouseTouchpad.Plug : Switchboard.Plug {
 
     private ClickingView clicking_view;
     private MouseView mouse_view;
+    private PointingStickView pointingstick_view;
     private PointingView pointing_view;
     private TouchpadView touchpad_view;
     private GesturesView gestures_view;
@@ -39,6 +40,7 @@ public class MouseTouchpad.Plug : Switchboard.Plug {
         var settings = new Gee.TreeMap<string, string?> (null, null);
         settings.set ("input/pointer/clicking", "clicking");
         settings.set ("input/pointer/mouse", "mouse");
+        settings.set ("input/pointer/pointingstick", "pointingstick");
         settings.set ("input/pointer/pointing", "pointing");
         settings.set ("input/pointer/touch", "touchpad");
         settings.set ("input/pointer/gestures", "gestures");
@@ -64,6 +66,7 @@ public class MouseTouchpad.Plug : Switchboard.Plug {
             clicking_view = new ClickingView ();
             mouse_view = new MouseView ();
             pointing_view = new PointingView ();
+            pointingstick_view = new PointingStickView ();
             touchpad_view = new TouchpadView ();
 
             stack = new Gtk.Stack ();
@@ -76,6 +79,7 @@ public class MouseTouchpad.Plug : Switchboard.Plug {
             }
 
             stack.add_named (mouse_view, "mouse");
+            stack.add_named (pointingstick_view, "pointingstick");
             stack.add_named (touchpad_view, "touchpad");
 
             var switcher = new Switchboard.SettingsSidebar (stack) {
@@ -107,24 +111,7 @@ public class MouseTouchpad.Plug : Switchboard.Plug {
     }
 
     public override void search_callback (string location) {
-        switch (location) {
-            case "mouse":
-                stack.set_visible_child_name ("mouse");
-                break;
-            case "pointing":
-                stack.set_visible_child_name ("pointing");
-                break;
-            case "touchpad":
-                stack.set_visible_child_name ("touchpad");
-                break;
-            case "gestures":
-                stack.set_visible_child_name ("gestures");
-                break;
-            case "clicking":
-            default:
-                stack.set_visible_child_name ("clicking");
-                break;
-        }
+        stack.set_visible_child_name (location);
     }
 
     /* 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior") */
@@ -144,6 +131,12 @@ public class MouseTouchpad.Plug : Switchboard.Plug {
         search_results.set ("%s → %s → %s".printf (display_name, _("Mouse"), _("Pointer Speed")), "mouse");
         search_results.set ("%s → %s → %s".printf (display_name, _("Mouse"), _("Pointer Acceleration")), "mouse");
         search_results.set ("%s → %s → %s".printf (display_name, _("Mouse"), _("Natural Scrolling")), "mouse");
+
+        search_results.set ("%s → %s".printf (display_name, _("Pointing Stick")), "pointingstick");
+        search_results.set ("%s → %s".printf (display_name, _("TrackPoint")), "pointingstick");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Pointing Stick"), _("Pointer Speed")), "pointingstick");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Pointing Stick"), _("Pointer Acceleration")), "pointingstick");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Pointing Stick"), _("Scroll Method")), "pointingstick");
 
         search_results.set ("%s → %s".printf (display_name, _("Pointing")), "pointing");
         search_results.set ("%s → %s".printf (display_name, _("Pointer Size")), "pointing");

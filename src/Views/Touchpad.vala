@@ -82,7 +82,10 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
 
         var scroll_method_label = new Granite.HeaderLabel (_("Scroll Method"));
 
-        var two_finger_scroll_radio = new Gtk.CheckButton ();
+        var two_finger_scroll_radio = new Gtk.CheckButton () {
+            action_name = "touchpad.scroll-method",
+            action_target = new Variant.string ("two-finger"),
+        };
         two_finger_scroll_radio.add_css_class ("image-button");
 
         var two_finger_scroll_label = new Gtk.Label (_("Two-finger"));
@@ -96,7 +99,8 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
         two_finger_scroll_box.set_parent (two_finger_scroll_radio);
 
         var edge_scroll_radio = new Gtk.CheckButton () {
-            group = two_finger_scroll_radio
+            action_name = "touchpad.scroll-method",
+            action_target = new Variant.string ("edge"),
         };
         edge_scroll_radio.add_css_class ("image-button");
 
@@ -209,39 +213,43 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
             null, null
         );
 
-        var action_group = new SimpleActionGroup ();
-        action_group.add_action (glib_settings.create_action ("click-method"));
+        var scroll_method_action = new SimpleAction.stateful ("scroll-method", VariantType.STRING, new Variant.string ("edge"));
+        scroll_method_action.change_state.connect ((value) => {
+            scroll_method_action.set_state (value);
 
-        insert_action_group ("touchpad", action_group);
+            var scroll_disabled = false;
 
-        /* This exists so that users can select another option if scrolling is
-         * disabled from another interface like dconf or Terminal
-         */
-        var disabled_scroll_radio = new Gtk.CheckButton () {
-            group = two_finger_scroll_radio
-        };
-        disabled_scroll_radio.toggled.connect (() => {
-            natural_scrolling_header.sensitive = !disabled_scroll_radio.active;
-            natural_scrolling_switch.sensitive = !disabled_scroll_radio.active;
-        });
+            switch (value.get_string ()) {
+                case "two-finger":
+                    glib_settings.set_boolean ("edge-scrolling-enabled", false);
+                    glib_settings.set_boolean ("two-finger-scrolling-enabled", true);
+                    break;
+                case "edge":
+                    glib_settings.set_boolean ("edge-scrolling-enabled", true);
+                    glib_settings.set_boolean ("two-finger-scrolling-enabled", false);
+                    break;
+                default:
+                    scroll_disabled = true;
+                    break;
+            }
 
-        two_finger_scroll_radio.toggled.connect (() => {
-            glib_settings.set_boolean ("edge-scrolling-enabled", false);
-            glib_settings.set_boolean ("two-finger-scrolling-enabled", true);
-        });
-
-        edge_scroll_radio.toggled.connect (() => {
-            glib_settings.set_boolean ("edge-scrolling-enabled", true);
-            glib_settings.set_boolean ("two-finger-scrolling-enabled", false);
-        });
+            natural_scrolling_header.sensitive = !scroll_disabled;
+            natural_scrolling_switch.sensitive = !scroll_disabled;
+		});
 
         var two_finger_scrolling = glib_settings.get_boolean ("two-finger-scrolling-enabled");
         if (!glib_settings.get_boolean ("edge-scrolling-enabled") && !two_finger_scrolling) {
-            disabled_scroll_radio.active = true;
+            scroll_method_action.set_state (new Variant.string ("disabled"));
         } else if (two_finger_scrolling) {
-            two_finger_scroll_radio.active = true;
+            scroll_method_action.set_state (new Variant.string ("two-finger"));
         } else {
-            edge_scroll_radio.active = true;
+            scroll_method_action.set_state (new Variant.string ("edge"));
         }
+
+        var action_group = new SimpleActionGroup ();
+        action_group.add_action (glib_settings.create_action ("click-method"));
+        action_group.add_action (scroll_method_action);
+
+        insert_action_group ("touchpad", action_group);
     }
 }

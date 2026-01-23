@@ -4,8 +4,7 @@
  */
 
 public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
-    private Gtk.CheckButton tap_to_click_check;
-    private Gtk.CheckButton tap_and_drag_check;
+    private GLib.Settings glib_settings;
     private Gtk.CheckButton drag_lock_check;
 
     public TouchpadView () {
@@ -72,11 +71,11 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
         click_method_box.append (multitouch_click_method_radio);
         click_method_box.append (areas_click_method_radio);
 
-        tap_to_click_check = new Gtk.CheckButton.with_label (_("Tap to click")) {
+        var tap_to_click_check = new Gtk.CheckButton.with_label (_("Tap to click")) {
             halign = START
         };
 
-        tap_and_drag_check = new Gtk.CheckButton.with_label (_("Double-tap and move to drag")) {
+        var tap_and_drag_check = new Gtk.CheckButton.with_label (_("Double-tap and move to drag")) {
             halign = START
         };
 
@@ -170,7 +169,7 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
 
         child = content_box;
 
-        var glib_settings = new GLib.Settings ("org.gnome.desktop.peripherals.touchpad");
+        glib_settings = new GLib.Settings ("org.gnome.desktop.peripherals.touchpad");
         glib_settings.bind (
             "disable-while-typing",
             disable_while_typing_check,
@@ -211,8 +210,8 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
         glib_settings.bind ("tap-and-drag-lock", drag_lock_check, "active", DEFAULT);
 
         update_drag_lock_sensitive ();
-        tap_to_click_check.notify["active"].connect (update_drag_lock_sensitive);
-        tap_and_drag_check.notify["active"].connect (update_drag_lock_sensitive);
+        glib_settings.changed["tap-to-click"].connect (update_drag_lock_sensitive);
+        glib_settings.changed["tap-and-drag"].connect (update_drag_lock_sensitive);
 
         glib_settings.bind_with_mapping (
             "send-events", disable_with_mouse_check, "active", DEFAULT,
@@ -267,12 +266,12 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
     }
 
     private void update_drag_lock_sensitive () {
-        if (!tap_to_click_check.active) {
+        if (!glib_settings.get_boolean ("tap-to-click")) {
             drag_lock_check.sensitive = false;
             return;
         }
 
-        if (!tap_and_drag_check.active) {
+        if (!glib_settings.get_boolean ("tap-and-drag")) {
             drag_lock_check.sensitive = false;
             return;
         }

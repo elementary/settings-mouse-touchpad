@@ -4,11 +4,6 @@
  */
 
 public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
-    private GLib.Settings glib_settings;
-    private Gtk.CheckButton areas_click_method_radio;
-    private Gtk.CheckButton multitouch_click_method_radio;
-    private Gtk.CheckButton other_click_method_radio;
-
     public TouchpadView () {
         Object (
             icon: new ThemedIcon ("input-touchpad"),
@@ -34,7 +29,10 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
             mnemonic_widget = pointer_speed_scale
         };
 
-        multitouch_click_method_radio = new Gtk.CheckButton ();
+        var multitouch_click_method_radio = new Gtk.CheckButton () {
+            action_name = "touchpad.click-method",
+            action_target = new Variant.string ("fingers"),
+        };
         multitouch_click_method_radio.add_css_class ("image-button");
 
         var multitouch_click_method_label = new Gtk.Label (_("Multitouch"));
@@ -48,8 +46,9 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
         multitouch_click_method_box.append (multitouch_click_method_label);
         multitouch_click_method_box.set_parent (multitouch_click_method_radio);
 
-        areas_click_method_radio = new Gtk.CheckButton () {
-            group = multitouch_click_method_radio
+        var areas_click_method_radio = new Gtk.CheckButton () {
+            action_name = "touchpad.click-method",
+            action_target = new Variant.string ("areas"),
         };
         areas_click_method_radio.add_css_class ("image-button");
 
@@ -83,7 +82,10 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
 
         var scroll_method_label = new Granite.HeaderLabel (_("Scroll Method"));
 
-        var two_finger_scroll_radio = new Gtk.CheckButton ();
+        var two_finger_scroll_radio = new Gtk.CheckButton () {
+            action_name = "touchpad.scroll-method",
+            action_target = new Variant.string ("two-finger"),
+        };
         two_finger_scroll_radio.add_css_class ("image-button");
 
         var two_finger_scroll_label = new Gtk.Label (_("Two-finger"));
@@ -97,7 +99,8 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
         two_finger_scroll_box.set_parent (two_finger_scroll_radio);
 
         var edge_scroll_radio = new Gtk.CheckButton () {
-            group = two_finger_scroll_radio
+            action_name = "touchpad.scroll-method",
+            action_target = new Variant.string ("edge"),
         };
         edge_scroll_radio.add_css_class ("image-button");
 
@@ -156,7 +159,7 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
 
         child = content_box;
 
-        glib_settings = new GLib.Settings ("org.gnome.desktop.peripherals.touchpad");
+        var glib_settings = new GLib.Settings ("org.gnome.desktop.peripherals.touchpad");
         glib_settings.bind (
             "disable-while-typing",
             disable_while_typing_check,
@@ -210,66 +213,43 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
             null, null
         );
 
-        /* This exists so that users can select another option if clicking is
-         * set from another interface like dconf or Terminal
-         */
-        other_click_method_radio = new Gtk.CheckButton () {
-            group = multitouch_click_method_radio
-        };
+        var scroll_method_action = new SimpleAction.stateful ("scroll-method", VariantType.STRING, new Variant.string ("edge"));
+        scroll_method_action.change_state.connect ((value) => {
+            scroll_method_action.set_state (value);
 
-        update_click_method ();
-        glib_settings.changed["click-method"].connect (update_click_method);
+            var scroll_disabled = false;
 
-        multitouch_click_method_radio.toggled.connect (() => {
-            glib_settings.set_string ("click-method", "fingers");
-        });
+            switch (value.get_string ()) {
+                case "two-finger":
+                    glib_settings.set_boolean ("edge-scrolling-enabled", false);
+                    glib_settings.set_boolean ("two-finger-scrolling-enabled", true);
+                    break;
+                case "edge":
+                    glib_settings.set_boolean ("edge-scrolling-enabled", true);
+                    glib_settings.set_boolean ("two-finger-scrolling-enabled", false);
+                    break;
+                default:
+                    scroll_disabled = true;
+                    break;
+            }
 
-        areas_click_method_radio.toggled.connect (() => {
-            glib_settings.set_string ("click-method", "areas");
-        });
-
-        /* This exists so that users can select another option if scrolling is
-         * disabled from another interface like dconf or Terminal
-         */
-        var disabled_scroll_radio = new Gtk.CheckButton () {
-            group = two_finger_scroll_radio
-        };
-        disabled_scroll_radio.toggled.connect (() => {
-            natural_scrolling_header.sensitive = !disabled_scroll_radio.active;
-            natural_scrolling_switch.sensitive = !disabled_scroll_radio.active;
-        });
-
-        two_finger_scroll_radio.toggled.connect (() => {
-            glib_settings.set_boolean ("edge-scrolling-enabled", false);
-            glib_settings.set_boolean ("two-finger-scrolling-enabled", true);
-        });
-
-        edge_scroll_radio.toggled.connect (() => {
-            glib_settings.set_boolean ("edge-scrolling-enabled", true);
-            glib_settings.set_boolean ("two-finger-scrolling-enabled", false);
-        });
+            natural_scrolling_header.sensitive = !scroll_disabled;
+            natural_scrolling_switch.sensitive = !scroll_disabled;
+		});
 
         var two_finger_scrolling = glib_settings.get_boolean ("two-finger-scrolling-enabled");
         if (!glib_settings.get_boolean ("edge-scrolling-enabled") && !two_finger_scrolling) {
-            disabled_scroll_radio.active = true;
+            scroll_method_action.set_state (new Variant.string ("disabled"));
         } else if (two_finger_scrolling) {
-            two_finger_scroll_radio.active = true;
+            scroll_method_action.set_state (new Variant.string ("two-finger"));
         } else {
-            edge_scroll_radio.active = true;
+            scroll_method_action.set_state (new Variant.string ("edge"));
         }
-    }
 
-    private void update_click_method () {
-        switch (glib_settings.get_string ("click-method")) {
-            case "fingers":
-                multitouch_click_method_radio.active = true;
-                break;
-            case "areas":
-                areas_click_method_radio.active = true;
-                break;
-            default:
-                other_click_method_radio.active = true;
-                break;
-        }
+        var action_group = new SimpleActionGroup ();
+        action_group.add_action (glib_settings.create_action ("click-method"));
+        action_group.add_action (scroll_method_action);
+
+        insert_action_group ("touchpad", action_group);
     }
 }

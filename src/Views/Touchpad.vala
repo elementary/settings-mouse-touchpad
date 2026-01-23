@@ -9,6 +9,10 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
     private Gtk.CheckButton multitouch_click_method_radio;
     private Gtk.CheckButton other_click_method_radio;
 
+    private Gtk.CheckButton tap_to_click_check;
+    private Gtk.CheckButton tap_and_drag_check;
+    private Gtk.CheckButton drag_lock_check;
+
     public TouchpadView () {
         Object (
             icon: new ThemedIcon ("input-touchpad"),
@@ -69,17 +73,28 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
         click_method_box.append (multitouch_click_method_radio);
         click_method_box.append (areas_click_method_radio);
 
-        var tap_to_click_check = new Gtk.CheckButton.with_label (_("Tap to click")) {
-            halign = Gtk.Align.START
+        tap_to_click_check = new Gtk.CheckButton.with_label (_("Tap to click")) {
+            halign = START
         };
 
-        var tap_and_drag_check = new Gtk.CheckButton.with_label (_("Double-tap and move to drag")) {
-            halign = Gtk.Align.START
+        tap_and_drag_check = new Gtk.CheckButton.with_label (_("Double-tap and move to drag")) {
+            halign = START
         };
 
-        var tap_box = new Gtk.Box (HORIZONTAL, 24);
+        drag_lock_check = new Gtk.CheckButton.with_label (_("Continue dragging if the finger is only lifted briefly")) {
+            halign = START
+        };
+
+        var tap_box = new Gtk.Box (VERTICAL, 6) {
+            accessible_role = LIST
+        };
         tap_box.append (tap_to_click_check);
         tap_box.append (tap_and_drag_check);
+        tap_box.append (drag_lock_check);
+
+        var tapping_header = new Granite.HeaderLabel (_("Tapping")) {
+            mnemonic_widget = tap_box
+        };
 
         var scroll_method_label = new Granite.HeaderLabel (_("Scroll Method"));
 
@@ -146,7 +161,7 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
         content_box.append (pointer_speed_scale);
         content_box.append (disable_label);
         content_box.append (disable_box);
-        content_box.append (new Granite.HeaderLabel (_("Tapping")));
+        content_box.append (tapping_header);
         content_box.append (tap_box);
         content_box.append (click_method_label);
         content_box.append (click_method_box);
@@ -193,6 +208,12 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
             "sensitive",
             BindingFlags.SYNC_CREATE
         );
+
+        glib_settings.bind ("tap-and-drag-lock", drag_lock_check, "active", DEFAULT);
+
+        update_drag_lock_sensitive ();
+        tap_to_click_check.notify["active"].connect (update_drag_lock_sensitive);
+        tap_and_drag_check.notify["active"].connect (update_drag_lock_sensitive);
 
         glib_settings.bind_with_mapping (
             "send-events", disable_with_mouse_check, "active", DEFAULT,
@@ -257,6 +278,20 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
         } else {
             edge_scroll_radio.active = true;
         }
+    }
+
+    private void update_drag_lock_sensitive () {
+        if (!tap_to_click_check.active) {
+            drag_lock_check.sensitive = false;
+            return;
+        }
+
+        if (!tap_and_drag_check.active) {
+            drag_lock_check.sensitive = false;
+            return;
+        }
+
+        drag_lock_check.sensitive = true;
     }
 
     private void update_click_method () {

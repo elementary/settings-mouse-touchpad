@@ -4,11 +4,6 @@
  */
 
 public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
-    private GLib.Settings glib_settings;
-    private Gtk.CheckButton areas_click_method_radio;
-    private Gtk.CheckButton multitouch_click_method_radio;
-    private Gtk.CheckButton other_click_method_radio;
-
     public TouchpadView () {
         Object (
             icon: new ThemedIcon ("input-touchpad"),
@@ -34,7 +29,10 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
             mnemonic_widget = pointer_speed_scale
         };
 
-        multitouch_click_method_radio = new Gtk.CheckButton ();
+        var multitouch_click_method_radio = new Gtk.CheckButton () {
+            action_name = "touchpad.click-method",
+            action_target = new Variant.string ("fingers"),
+        };
         multitouch_click_method_radio.add_css_class ("image-button");
 
         var multitouch_click_method_label = new Gtk.Label (_("Multitouch"));
@@ -48,8 +46,9 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
         multitouch_click_method_box.append (multitouch_click_method_label);
         multitouch_click_method_box.set_parent (multitouch_click_method_radio);
 
-        areas_click_method_radio = new Gtk.CheckButton () {
-            group = multitouch_click_method_radio
+        var areas_click_method_radio = new Gtk.CheckButton () {
+            action_name = "touchpad.click-method",
+            action_target = new Variant.string ("areas"),
         };
         areas_click_method_radio.add_css_class ("image-button");
 
@@ -156,7 +155,7 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
 
         child = content_box;
 
-        glib_settings = new GLib.Settings ("org.gnome.desktop.peripherals.touchpad");
+        var glib_settings = new GLib.Settings ("org.gnome.desktop.peripherals.touchpad");
         glib_settings.bind (
             "disable-while-typing",
             disable_while_typing_check,
@@ -210,23 +209,10 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
             null, null
         );
 
-        /* This exists so that users can select another option if clicking is
-         * set from another interface like dconf or Terminal
-         */
-        other_click_method_radio = new Gtk.CheckButton () {
-            group = multitouch_click_method_radio
-        };
+        var action_group = new SimpleActionGroup ();
+        action_group.add_action (glib_settings.create_action ("click-method"));
 
-        update_click_method ();
-        glib_settings.changed["click-method"].connect (update_click_method);
-
-        multitouch_click_method_radio.toggled.connect (() => {
-            glib_settings.set_string ("click-method", "fingers");
-        });
-
-        areas_click_method_radio.toggled.connect (() => {
-            glib_settings.set_string ("click-method", "areas");
-        });
+        insert_action_group ("touchpad", action_group);
 
         /* This exists so that users can select another option if scrolling is
          * disabled from another interface like dconf or Terminal
@@ -256,20 +242,6 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
             two_finger_scroll_radio.active = true;
         } else {
             edge_scroll_radio.active = true;
-        }
-    }
-
-    private void update_click_method () {
-        switch (glib_settings.get_string ("click-method")) {
-            case "fingers":
-                multitouch_click_method_radio.active = true;
-                break;
-            case "areas":
-                areas_click_method_radio.active = true;
-                break;
-            default:
-                other_click_method_radio.active = true;
-                break;
         }
     }
 }

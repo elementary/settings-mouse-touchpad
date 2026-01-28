@@ -266,16 +266,6 @@ public class MouseTouchpad.TouchpadView : Switchboard.SettingsPage {
     }
 
     private void update_drag_lock_sensitive () {
-        if (!glib_settings.get_boolean ("tap-to-click")) {
-            drag_lock_check.sensitive = false;
-            return;
-        }
-
-        if (!glib_settings.get_boolean ("tap-and-drag")) {
-            drag_lock_check.sensitive = false;
-            return;
-        }
-
-        drag_lock_check.sensitive = true;
+        drag_lock_check.sensitive = glib_settings.get_boolean ("tap-to-click") && glib_settings.get_boolean ("tap-and-drag");
     }
 }

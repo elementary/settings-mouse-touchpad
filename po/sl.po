@@ -7,153 +7,147 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-11 01:10+0000\n"
-"PO-Revision-Date: 2024-01-30 16:38+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-mouse-touchpad/sl/>\n"
+"POT-Creation-Date: 2026-01-28 15:14+0000\n"
+"PO-Revision-Date: 2026-01-22 21:55+0000\n"
+"Last-Translator: Jernej Virag <jernej@virag.si>\n"
+"Language-Team: Slovenian <https://l10n.elementaryos.org/projects/settings/"
+"mouse-touchpad/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-02-16 06:46+0000\n"
 
-#: src/Plug.vala:53
+#: src/Plug.vala:55
 msgid "Mouse & Touchpad"
 msgstr "Miška in sledilna ploščica"
 
-#: src/Plug.vala:54
+#: src/Plug.vala:56
 msgid "Configure mouse and touchpad"
 msgstr "Nastavitve miške in sledilne ploščice"
 
-#: src/Plug.vala:130 src/Views/Clicking.vala:25
+#: src/Plug.vala:123 src/Views/Clicking.vala:25
 msgid "Clicking"
 msgstr "Klikanje"
 
-#: src/Plug.vala:131 src/Views/Clicking.vala:106
-#, fuzzy
-#| msgid "Double-click speed"
+#: src/Plug.vala:124 src/Views/Clicking.vala:106
 msgid "Double-click Speed"
 msgstr "Hitrost dvoklika"
 
-#: src/Plug.vala:132 src/Views/Clicking.vala:116
+#: src/Plug.vala:125 src/Views/Clicking.vala:116
 msgid "Dwell Click"
-msgstr ""
+msgstr "Klik s čakanjem"
 
-#: src/Plug.vala:133 src/Views/Clicking.vala:32
-#, fuzzy
-#| msgid "Primary button"
+#: src/Plug.vala:126 src/Views/Clicking.vala:32
 msgid "Primary Button"
 msgstr "Primarni gumb"
 
-#: src/Plug.vala:134 src/Views/Clicking.vala:75
+#: src/Plug.vala:127 src/Views/Clicking.vala:75
 msgid "Long-press Secondary Click"
-msgstr ""
+msgstr "Sekundarni klik z dolgim pritiskom"
 
-#: src/Plug.vala:135 src/Views/Clicking.vala:171
-#, fuzzy
-#| msgid "Middle click paste"
+#: src/Plug.vala:128 src/Views/Clicking.vala:171
 msgid "Middle Click Paste"
 msgstr "Prilepi s srednjim klikom"
 
-#: src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
+#: src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
 #: src/Views/Mouse.vala:11
 msgid "Mouse"
 msgstr "Miška"
 
-#: src/Plug.vala:138 src/Plug.vala:148 src/Views/Mouse.vala:27
-#: src/Views/Touchpad.vala:33
-#, fuzzy
-#| msgid "Pointer speed"
+#: src/Plug.vala:131 src/Plug.vala:137 src/Plug.vala:147
+#: src/Views/Mouse.vala:27 src/Views/PointingStick.vala:27
+#: src/Views/Touchpad.vala:28
 msgid "Pointer Speed"
 msgstr "Hitrost kazalca"
 
-#: src/Plug.vala:139 src/Views/Mouse.vala:59
-#, fuzzy
-#| msgid "Pointer acceleration"
+#: src/Plug.vala:132 src/Plug.vala:138 src/Views/Mouse.vala:59
+#: src/Views/PointingStick.vala:53
 msgid "Pointer Acceleration"
 msgstr "Pospešek kazalca"
 
-#: src/Plug.vala:140 src/Plug.vala:153 src/Views/Mouse.vala:45
-#: src/Views/Touchpad.vala:124
-#, fuzzy
-#| msgid "Natural scrolling"
+#: src/Plug.vala:133 src/Plug.vala:152 src/Views/Mouse.vala:45
+#: src/Views/Touchpad.vala:123
 msgid "Natural Scrolling"
 msgstr "Naravno drsenje"
 
-#: src/Plug.vala:142 src/Views/Pointing.vala:10
+#: src/Plug.vala:135 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
+#: src/Views/PointingStick.vala:11
+#, fuzzy
+#| msgid "Pointing"
+msgid "Pointing Stick"
+msgstr "Kazanje"
+
+#: src/Plug.vala:136
+msgid "TrackPoint"
+msgstr ""
+
+#: src/Plug.vala:139 src/Plug.vala:151 src/Views/PointingStick.vala:79
+#: src/Views/Touchpad.vala:83
+msgid "Scroll Method"
+msgstr "Način drsenja"
+
+#: src/Plug.vala:141 src/Views/Pointing.vala:10
 msgid "Pointing"
 msgstr "Kazanje"
 
-#: src/Plug.vala:143 src/Views/Pointing.vala:87
-#, fuzzy
-#| msgid "Pointer size"
+#: src/Plug.vala:142 src/Views/Pointing.vala:71
 msgid "Pointer Size"
 msgstr "Velikost kazalca"
 
-#: src/Plug.vala:144 src/Views/Pointing.vala:78
-#, fuzzy
-#| msgid "Reveal pointer"
+#: src/Plug.vala:143 src/Views/Pointing.vala:80
 msgid "Reveal Pointer"
 msgstr "Pokaži kazalec"
 
-#: src/Plug.vala:145 src/Views/Pointing.vala:22
-#, fuzzy
-#| msgid "Control pointer using keypad"
+#: src/Plug.vala:144 src/Views/Pointing.vala:22
 msgid "Control Pointer Using Keypad"
 msgstr "Upravljanje kazalca s številčnico"
 
-#: src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149 src/Plug.vala:150
-#: src/Plug.vala:151 src/Plug.vala:152 src/Plug.vala:153 src/Plug.vala:154
-#: src/Plug.vala:155 src/Views/Touchpad.vala:15
+#: src/Plug.vala:146 src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149
+#: src/Plug.vala:150 src/Plug.vala:151 src/Plug.vala:152 src/Plug.vala:153
+#: src/Plug.vala:154 src/Views/Touchpad.vala:10
 msgid "Touchpad"
 msgstr "Sledilna ploščica"
 
-#: src/Plug.vala:149 src/Views/Touchpad.vala:72
+#: src/Plug.vala:148 src/Views/Touchpad.vala:71
 msgid "Tap to click"
 msgstr "Dotik ploščice za klik"
 
-#: src/Plug.vala:150 src/Views/Touchpad.vala:76
+#: src/Plug.vala:149 src/Views/Touchpad.vala:75
 msgid "Double-tap and move to drag"
-msgstr ""
+msgstr "Dvojni dotik in premik za vlečenje"
 
-#: src/Plug.vala:151 src/Views/Touchpad.vala:66
-#, fuzzy
-#| msgid "Physical clicking:"
+#: src/Plug.vala:150 src/Views/Touchpad.vala:65
 msgid "Physical Secondary Clicking"
-msgstr "Fizično klikanje:"
+msgstr "Fizično sekundarno klikanje"
 
-#: src/Plug.vala:152 src/Views/Touchpad.vala:84
-msgid "Scroll Method"
-msgstr ""
-
-#: src/Plug.vala:154
+#: src/Plug.vala:153
 msgid "Ignore while typing"
 msgstr "Izklopi med tipkanjem"
 
-#: src/Plug.vala:155
+#: src/Plug.vala:154
 msgid "Ignore when mouse is connected"
 msgstr "Izklopi ko je povezana miška"
 
-#: src/Plug.vala:158 src/Plug.vala:159 src/Plug.vala:160 src/Plug.vala:161
+#: src/Plug.vala:157 src/Plug.vala:158 src/Plug.vala:159 src/Plug.vala:160
 #: src/Views/Gestures.vala:25
 msgid "Gestures"
-msgstr ""
+msgstr "Poteze"
 
-#: src/Plug.vala:159 src/Views/Gestures.vala:66 src/Views/Gestures.vala:74
+#: src/Plug.vala:158 src/Views/Gestures.vala:74 src/Views/Gestures.vala:83
 msgid "Multitasking View"
 msgstr "Pokaži vsa okna"
 
-#: src/Plug.vala:160
+#: src/Plug.vala:159
 msgid "Switch Workspaces"
-msgstr ""
+msgstr "Menjaj delovno površino"
 
-#: src/Plug.vala:161
+#: src/Plug.vala:160
 msgid "Maximize Window"
-msgstr ""
+msgstr "Maksimiraj okno"
 
 #: src/Views/Clicking.vala:23
 msgid "Behavior"
@@ -163,13 +157,13 @@ msgstr "Vedenje"
 #: src/Views/Clicking.vala:36
 msgctxt "mouse-button"
 msgid "Left"
-msgstr "Levo"
+msgstr "Levi"
 
 #. / TRANSLATORS: Used as "Primary Button: Right";
 #: src/Views/Clicking.vala:48
 msgctxt "mouse-button"
 msgid "Right"
-msgstr "Desno"
+msgstr "Desni"
 
 #: src/Views/Clicking.vala:77
 msgid "Long-press and release the primary button to secondary click"
@@ -184,154 +178,150 @@ msgid "Hold the pointer still to automatically click"
 msgstr "Držite kazalec na miru za samodejni klik"
 
 #: src/Views/Clicking.vala:173
-#, fuzzy
-#| msgid ""
-#| "Middle or three-finger clicking on an input will paste any selected text"
 msgid "Middle or three-finger click on an input to paste selected text"
 msgstr ""
 "Srednji ali tri-prstni klik na vnosno vrstico bo prilepil izbrano besedilo"
 
-#: src/Views/Clicking.vala:235 src/Views/Clicking.vala:240
-#, fuzzy, c-format
-#| msgid "seconds"
+#: src/Views/Clicking.vala:223 src/Views/Clicking.vala:228
+#, c-format
 msgid "%.1f seconds"
-msgstr "sekund"
+msgstr "%.1f sekund"
 
-#: src/Views/Gestures.vala:32
-msgid "Swipe Horizontally"
-msgstr ""
-
-#: src/Views/Gestures.vala:34 src/Views/Gestures.vala:60
-#: src/Views/Gestures.vala:80
-msgid "Three fingers:"
-msgstr ""
-
-#: src/Views/Gestures.vala:41 src/Views/Gestures.vala:51
-#: src/Views/Gestures.vala:65 src/Views/Gestures.vala:73
-#: src/Views/Gestures.vala:85 src/Views/Gestures.vala:93
+#: src/Views/Gestures.vala:35 src/Views/Gestures.vala:46
+#: src/Views/Gestures.vala:73 src/Views/Gestures.vala:82
+#: src/Views/Gestures.vala:108 src/Views/Gestures.vala:117
 msgid "Do nothing"
 msgstr "Ne stori ničesar"
 
-#: src/Views/Gestures.vala:42 src/Views/Gestures.vala:52
+#: src/Views/Gestures.vala:36 src/Views/Gestures.vala:47
 msgid "Switch to workspace"
-msgstr ""
+msgstr "Menjaj na delovno površino"
 
-#: src/Views/Gestures.vala:43 src/Views/Gestures.vala:53
+#: src/Views/Gestures.vala:37 src/Views/Gestures.vala:48
 msgid "Move active window to workspace"
-msgstr ""
+msgstr "Premakni aktivno okno na delovno površino"
 
-#: src/Views/Gestures.vala:44 src/Views/Gestures.vala:54
+#: src/Views/Gestures.vala:38 src/Views/Gestures.vala:49
 msgid "Cycle windows"
-msgstr ""
+msgstr "Preklapljaj med okni"
 
-#: src/Views/Gestures.vala:46 src/Views/Gestures.vala:68
-#: src/Views/Gestures.vala:88
-#, fuzzy
-#| msgid "Two-finger"
+#: src/Views/Gestures.vala:40 src/Views/Gestures.vala:76
+#: src/Views/Gestures.vala:111
+msgid "Three fingers:"
+msgstr "Trije prsti:"
+
+#: src/Views/Gestures.vala:51 src/Views/Gestures.vala:85
+#: src/Views/Gestures.vala:120
 msgid "Four fingers:"
-msgstr "Dvoprstno"
+msgstr "Štirje prsti:"
 
-#: src/Views/Gestures.vala:56
+#: src/Views/Gestures.vala:66
+msgid "Swipe Horizontally"
+msgstr "Povleci horizontalno"
+
+#: src/Views/Gestures.vala:100
 msgid "Swipe Up"
-msgstr ""
+msgstr "Povleci gor"
 
-#: src/Views/Gestures.vala:76
-msgid "Pinch"
-msgstr ""
-
-#: src/Views/Gestures.vala:86 src/Views/Gestures.vala:94
+#: src/Views/Gestures.vala:109 src/Views/Gestures.vala:118
 msgid "Zoom"
 msgstr "Približano"
 
-#: src/Views/Gestures.vala:130 src/Views/Gestures.vala:131
-msgid "Toggle maximized"
-msgstr ""
+#: src/Views/Gestures.vala:135
+msgid "Pinch"
+msgstr "Uščip"
 
-#: src/Views/Mouse.vala:9
+#: src/Views/Gestures.vala:162 src/Views/Gestures.vala:163
+msgid "Toggle maximized"
+msgstr "Preklop maksimiranja"
+
+#: src/Views/Mouse.vala:9 src/Views/PointingStick.vala:9
 msgid "Devices"
 msgstr "Naprave"
 
-#: src/Views/Mouse.vala:23 src/Views/Pointing.vala:32
-#: src/Views/Touchpad.vala:29
+#: src/Views/Mouse.vala:23 src/Views/PointingStick.vala:23
+#: src/Views/Pointing.vala:32 src/Views/Touchpad.vala:24
 msgid "Slower"
-msgstr ""
+msgstr "Počasneje"
 
-#: src/Views/Mouse.vala:25 src/Views/Pointing.vala:34
-#: src/Views/Touchpad.vala:31
+#: src/Views/Mouse.vala:25 src/Views/PointingStick.vala:25
+#: src/Views/Pointing.vala:34 src/Views/Touchpad.vala:26
 msgid "Faster"
-msgstr ""
+msgstr "Hitreje"
 
-#: src/Views/Mouse.vala:31
+#: src/Views/Mouse.vala:31 src/Views/PointingStick.vala:31
+#: src/Views/PointingStick.vala:57
 msgid "Hardware default"
 msgstr "Privzeta nastavitev"
 
-#: src/Views/Mouse.vala:32
+#: src/Views/Mouse.vala:32 src/Views/PointingStick.vala:36
+#: src/Views/PointingStick.vala:62
 msgid "None"
 msgstr "Brez"
 
-#: src/Views/Mouse.vala:35
+#: src/Views/Mouse.vala:35 src/Views/PointingStick.vala:41
 msgid "Adaptive"
 msgstr "Samodejni"
 
-#: src/Views/Mouse.vala:47 src/Views/Touchpad.vala:126
+#: src/Views/Mouse.vala:47 src/Views/Touchpad.vala:125
 msgid "Scrolling moves the content, not the view"
+msgstr "Drsenje premakne vsebino, ne pogleda"
+
+#: src/Views/PointingStick.vala:67
+msgid "While the middle button is held down"
 msgstr ""
 
 #: src/Views/Pointing.vala:23
 msgid "This disables both levels of keys on the numeric keypad"
-msgstr ""
+msgstr "To izklopi oba nivoja tipk na numerični tipkovnici"
 
-#: src/Views/Pointing.vala:37
+#: src/Views/Pointing.vala:42
 msgid "Small"
 msgstr "Majhen"
 
-#: src/Views/Pointing.vala:48
+#: src/Views/Pointing.vala:52
 msgid "Medium"
 msgstr "Srednji"
 
-#: src/Views/Pointing.vala:59
+#: src/Views/Pointing.vala:62
 msgid "Large"
 msgstr "Velik"
 
-#: src/Views/Pointing.vala:80
+#: src/Views/Pointing.vala:82
 msgid "Pressing the control key will highlight the position of the pointer"
 msgstr "Tipka Ctrl bo poudarila miškin kazalec"
 
-#: src/Views/Touchpad.vala:40
+#: src/Views/Touchpad.vala:38
 msgid "Multitouch"
 msgstr "Z večimi prsti"
 
-#: src/Views/Touchpad.vala:56
+#: src/Views/Touchpad.vala:55
 msgid "Areas"
-msgstr ""
+msgstr "Območja"
 
-#: src/Views/Touchpad.vala:89
+#: src/Views/Touchpad.vala:88
 msgid "Two-finger"
 msgstr "Dvoprstno"
 
-#: src/Views/Touchpad.vala:104
+#: src/Views/Touchpad.vala:103
 msgid "Edge"
 msgstr "Rob"
 
-#: src/Views/Touchpad.vala:135
+#: src/Views/Touchpad.vala:134
 msgid "Ignore"
-msgstr ""
+msgstr "Ignoriraj"
+
+#: src/Views/Touchpad.vala:136
+msgid "While typing"
+msgstr "Med tipkanjem"
 
 #: src/Views/Touchpad.vala:137
-#, fuzzy
-#| msgid "Ignore while typing"
-msgid "While typing"
-msgstr "Izklopi med tipkanjem"
-
-#: src/Views/Touchpad.vala:138
-#, fuzzy
-#| msgid "Ignore when mouse is connected"
 msgid "When mouse is connected"
-msgstr "Izklopi ko je povezana miška"
+msgstr "Ko je povezana miška"
 
-#: src/Views/Touchpad.vala:149
+#: src/Views/Touchpad.vala:148
 msgid "Tapping"
-msgstr ""
+msgstr "Tapanje"
 
 #~ msgid "Double-click speed"
 #~ msgstr "Hitrost dvoklika"

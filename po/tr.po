@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-11 01:10+0000\n"
-"PO-Revision-Date: 2024-01-30 16:38+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2026-01-28 15:14+0000\n"
+"PO-Revision-Date: 2024-09-24 11:24+0000\n"
+"Last-Translator: Sinan Decron <sinanveyasinan@gmail.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-mouse-touchpad/tr/>\n"
 "Language: tr\n"
@@ -17,146 +17,134 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-02-16 06:46+0000\n"
 
-#: src/Plug.vala:53
+#: src/Plug.vala:55
 msgid "Mouse & Touchpad"
 msgstr "Fare ve Dokunmatik Yüzey"
 
-#: src/Plug.vala:54
+#: src/Plug.vala:56
 msgid "Configure mouse and touchpad"
 msgstr "Fare ve dokunmatik yüzeyi yapılandırın"
 
-#: src/Plug.vala:130 src/Views/Clicking.vala:25
+#: src/Plug.vala:123 src/Views/Clicking.vala:25
 msgid "Clicking"
 msgstr "Tıklama"
 
-#: src/Plug.vala:131 src/Views/Clicking.vala:106
-#, fuzzy
-#| msgid "Double-click speed"
+#: src/Plug.vala:124 src/Views/Clicking.vala:106
 msgid "Double-click Speed"
-msgstr "Çift tıklama hızı"
+msgstr "Çift tıklama Hızı"
 
-#: src/Plug.vala:132 src/Views/Clicking.vala:116
-#, fuzzy
-#| msgid "Dwell click"
+#: src/Plug.vala:125 src/Views/Clicking.vala:116
 msgid "Dwell Click"
-msgstr "Otomatik tıklama"
+msgstr "Basılı kalan Tıklama"
 
-#: src/Plug.vala:133 src/Views/Clicking.vala:32
-#, fuzzy
-#| msgid "Primary button"
+#: src/Plug.vala:126 src/Views/Clicking.vala:32
 msgid "Primary Button"
-msgstr "Birincil düğme"
+msgstr "Birincil Düğme"
 
-#: src/Plug.vala:134 src/Views/Clicking.vala:75
-#, fuzzy
-#| msgid "Long-press secondary click"
+#: src/Plug.vala:127 src/Views/Clicking.vala:75
 msgid "Long-press Secondary Click"
-msgstr "İkincil tıklama için basılı tutun"
+msgstr "Uzun Basma İkincil Tıklama"
 
-#: src/Plug.vala:135 src/Views/Clicking.vala:171
-#, fuzzy
-#| msgid "Middle click paste"
+#: src/Plug.vala:128 src/Views/Clicking.vala:171
 msgid "Middle Click Paste"
 msgstr "Orta tıklama ile yapıştır"
 
-#: src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
+#: src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
 #: src/Views/Mouse.vala:11
 msgid "Mouse"
 msgstr "Fare"
 
-#: src/Plug.vala:138 src/Plug.vala:148 src/Views/Mouse.vala:27
-#: src/Views/Touchpad.vala:33
-#, fuzzy
-#| msgid "Pointer speed"
+#: src/Plug.vala:131 src/Plug.vala:137 src/Plug.vala:147
+#: src/Views/Mouse.vala:27 src/Views/PointingStick.vala:27
+#: src/Views/Touchpad.vala:28
 msgid "Pointer Speed"
-msgstr "İşaretçi hızı"
+msgstr "İşaretçi Hızı"
 
-#: src/Plug.vala:139 src/Views/Mouse.vala:59
-#, fuzzy
-#| msgid "Pointer acceleration"
+#: src/Plug.vala:132 src/Plug.vala:138 src/Views/Mouse.vala:59
+#: src/Views/PointingStick.vala:53
 msgid "Pointer Acceleration"
-msgstr "İşaretçi hızlandırması"
+msgstr "İşaretçi Hızlandırması"
 
-#: src/Plug.vala:140 src/Plug.vala:153 src/Views/Mouse.vala:45
-#: src/Views/Touchpad.vala:124
-#, fuzzy
-#| msgid "Natural scrolling"
+#: src/Plug.vala:133 src/Plug.vala:152 src/Views/Mouse.vala:45
+#: src/Views/Touchpad.vala:123
 msgid "Natural Scrolling"
-msgstr "Doğal kaydırma"
+msgstr "Doğal Kaydırma"
 
-#: src/Plug.vala:142 src/Views/Pointing.vala:10
+#: src/Plug.vala:135 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
+#: src/Views/PointingStick.vala:11
+#, fuzzy
+#| msgid "Pointing"
+msgid "Pointing Stick"
+msgstr "İşaretçi"
+
+#: src/Plug.vala:136
+msgid "TrackPoint"
+msgstr ""
+
+#: src/Plug.vala:139 src/Plug.vala:151 src/Views/PointingStick.vala:79
+#: src/Views/Touchpad.vala:83
+msgid "Scroll Method"
+msgstr "Kaydırma Yöntemi"
+
+#: src/Plug.vala:141 src/Views/Pointing.vala:10
 msgid "Pointing"
 msgstr "İşaretçi"
 
-#: src/Plug.vala:143 src/Views/Pointing.vala:87
-#, fuzzy
-#| msgid "Pointer size"
+#: src/Plug.vala:142 src/Views/Pointing.vala:71
 msgid "Pointer Size"
-msgstr "İşaretçi boyutu"
+msgstr "İşaretçi Boyutu"
 
-#: src/Plug.vala:144 src/Views/Pointing.vala:78
-#, fuzzy
-#| msgid "Reveal pointer"
+#: src/Plug.vala:143 src/Views/Pointing.vala:80
 msgid "Reveal Pointer"
-msgstr "İşaretçiyi göster"
+msgstr "İşaretçiyi Göster"
 
-#: src/Plug.vala:145 src/Views/Pointing.vala:22
-#, fuzzy
-#| msgid "Control pointer using keypad"
+#: src/Plug.vala:144 src/Views/Pointing.vala:22
 msgid "Control Pointer Using Keypad"
-msgstr "İşaretçiyi tuş takımını kullanarak kontrol et"
+msgstr "İşaretçiyi Tuş Takımını Kullanarak Kontrol Et"
 
-#: src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149 src/Plug.vala:150
-#: src/Plug.vala:151 src/Plug.vala:152 src/Plug.vala:153 src/Plug.vala:154
-#: src/Plug.vala:155 src/Views/Touchpad.vala:15
+#: src/Plug.vala:146 src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149
+#: src/Plug.vala:150 src/Plug.vala:151 src/Plug.vala:152 src/Plug.vala:153
+#: src/Plug.vala:154 src/Views/Touchpad.vala:10
 msgid "Touchpad"
 msgstr "Dokunmatik Yüzey"
 
-#: src/Plug.vala:149 src/Views/Touchpad.vala:72
+#: src/Plug.vala:148 src/Views/Touchpad.vala:71
 msgid "Tap to click"
 msgstr "Dokunarak tıklama"
 
-#: src/Plug.vala:150 src/Views/Touchpad.vala:76
+#: src/Plug.vala:149 src/Views/Touchpad.vala:75
 msgid "Double-tap and move to drag"
 msgstr "Sürüklemek için iki kez dokunun ve hareket ettirin"
 
-#: src/Plug.vala:151 src/Views/Touchpad.vala:66
-#, fuzzy
-#| msgid "Physical secondary clicking:"
+#: src/Plug.vala:150 src/Views/Touchpad.vala:65
 msgid "Physical Secondary Clicking"
-msgstr "Fiziksel ikincil tıklama:"
+msgstr "Fiziksel İkincil Tıklama"
 
-#: src/Plug.vala:152 src/Views/Touchpad.vala:84
-#, fuzzy
-#| msgid "Scroll method:"
-msgid "Scroll Method"
-msgstr "Kaydırma yöntemi:"
-
-#: src/Plug.vala:154
+#: src/Plug.vala:153
 msgid "Ignore while typing"
 msgstr "Yazarken yoksay"
 
-#: src/Plug.vala:155
+#: src/Plug.vala:154
 msgid "Ignore when mouse is connected"
 msgstr "Fare bağlandığında yoksay"
 
-#: src/Plug.vala:158 src/Plug.vala:159 src/Plug.vala:160 src/Plug.vala:161
+#: src/Plug.vala:157 src/Plug.vala:158 src/Plug.vala:159 src/Plug.vala:160
 #: src/Views/Gestures.vala:25
 msgid "Gestures"
 msgstr "Hareketler"
 
-#: src/Plug.vala:159 src/Views/Gestures.vala:66 src/Views/Gestures.vala:74
+#: src/Plug.vala:158 src/Views/Gestures.vala:74 src/Views/Gestures.vala:83
 msgid "Multitasking View"
 msgstr "Çoklu Görev Görünümü"
 
-#: src/Plug.vala:160
+#: src/Plug.vala:159
 msgid "Switch Workspaces"
 msgstr "Çalışma Alanlarını Değiştir"
 
-#: src/Plug.vala:161
+#: src/Plug.vala:160
 msgid "Maximize Window"
 msgstr "Pencereye Ekranı Kaplat"
 
@@ -195,92 +183,93 @@ msgstr ""
 "Seçili metni yapıştırmak için giriş alanına orta tuşla veya üç parmak ile "
 "tıklayın"
 
-#: src/Views/Clicking.vala:235 src/Views/Clicking.vala:240
-#, fuzzy, c-format
-#| msgid "seconds"
+#: src/Views/Clicking.vala:223 src/Views/Clicking.vala:228
+#, c-format
 msgid "%.1f seconds"
-msgstr "saniye"
+msgstr "%.1f saniye"
 
-#: src/Views/Gestures.vala:32
-msgid "Swipe Horizontally"
-msgstr "Yatay Olarak Kaydır"
-
-#: src/Views/Gestures.vala:34 src/Views/Gestures.vala:60
-#: src/Views/Gestures.vala:80
-msgid "Three fingers:"
-msgstr "Üç parmak:"
-
-#: src/Views/Gestures.vala:41 src/Views/Gestures.vala:51
-#: src/Views/Gestures.vala:65 src/Views/Gestures.vala:73
-#: src/Views/Gestures.vala:85 src/Views/Gestures.vala:93
+#: src/Views/Gestures.vala:35 src/Views/Gestures.vala:46
+#: src/Views/Gestures.vala:73 src/Views/Gestures.vala:82
+#: src/Views/Gestures.vala:108 src/Views/Gestures.vala:117
 msgid "Do nothing"
 msgstr "Hiçbir şey yapma"
 
-#: src/Views/Gestures.vala:42 src/Views/Gestures.vala:52
+#: src/Views/Gestures.vala:36 src/Views/Gestures.vala:47
 msgid "Switch to workspace"
 msgstr "Çalışma alanlarını değiştir"
 
-#: src/Views/Gestures.vala:43 src/Views/Gestures.vala:53
-#, fuzzy
-#| msgid "Switch to workspace"
+#: src/Views/Gestures.vala:37 src/Views/Gestures.vala:48
 msgid "Move active window to workspace"
-msgstr "Çalışma alanlarını değiştir"
+msgstr "Etkin pencereyi çalışma alanına taşı"
 
-#: src/Views/Gestures.vala:44 src/Views/Gestures.vala:54
-#, fuzzy
-#| msgid "Tile Window"
+#: src/Views/Gestures.vala:38 src/Views/Gestures.vala:49
 msgid "Cycle windows"
-msgstr "Pencereyi Döşe"
+msgstr "Pencereler arasında geçiş yap"
 
-#: src/Views/Gestures.vala:46 src/Views/Gestures.vala:68
-#: src/Views/Gestures.vala:88
+#: src/Views/Gestures.vala:40 src/Views/Gestures.vala:76
+#: src/Views/Gestures.vala:111
+msgid "Three fingers:"
+msgstr "Üç parmak:"
+
+#: src/Views/Gestures.vala:51 src/Views/Gestures.vala:85
+#: src/Views/Gestures.vala:120
 msgid "Four fingers:"
 msgstr "Dört parmak:"
 
-#: src/Views/Gestures.vala:56
+#: src/Views/Gestures.vala:66
+msgid "Swipe Horizontally"
+msgstr "Yatay Olarak Kaydır"
+
+#: src/Views/Gestures.vala:100
 msgid "Swipe Up"
 msgstr "Yukarı Kaydır"
 
-#: src/Views/Gestures.vala:76
-msgid "Pinch"
-msgstr "Sıkıştır"
-
-#: src/Views/Gestures.vala:86 src/Views/Gestures.vala:94
+#: src/Views/Gestures.vala:109 src/Views/Gestures.vala:118
 msgid "Zoom"
 msgstr "Yakınlaştır"
 
-#: src/Views/Gestures.vala:130 src/Views/Gestures.vala:131
+#: src/Views/Gestures.vala:135
+msgid "Pinch"
+msgstr "Sıkıştır"
+
+#: src/Views/Gestures.vala:162 src/Views/Gestures.vala:163
 msgid "Toggle maximized"
 msgstr "Ekranı kaplamayı değiştir"
 
-#: src/Views/Mouse.vala:9
+#: src/Views/Mouse.vala:9 src/Views/PointingStick.vala:9
 msgid "Devices"
 msgstr "Aygıtlar"
 
-#: src/Views/Mouse.vala:23 src/Views/Pointing.vala:32
-#: src/Views/Touchpad.vala:29
+#: src/Views/Mouse.vala:23 src/Views/PointingStick.vala:23
+#: src/Views/Pointing.vala:32 src/Views/Touchpad.vala:24
 msgid "Slower"
-msgstr ""
+msgstr "Daha Yavaş"
 
-#: src/Views/Mouse.vala:25 src/Views/Pointing.vala:34
-#: src/Views/Touchpad.vala:31
+#: src/Views/Mouse.vala:25 src/Views/PointingStick.vala:25
+#: src/Views/Pointing.vala:34 src/Views/Touchpad.vala:26
 msgid "Faster"
-msgstr ""
+msgstr "Daha Hızlı"
 
-#: src/Views/Mouse.vala:31
+#: src/Views/Mouse.vala:31 src/Views/PointingStick.vala:31
+#: src/Views/PointingStick.vala:57
 msgid "Hardware default"
 msgstr "Donanım varsayılanı"
 
-#: src/Views/Mouse.vala:32
+#: src/Views/Mouse.vala:32 src/Views/PointingStick.vala:36
+#: src/Views/PointingStick.vala:62
 msgid "None"
 msgstr "Yok"
 
-#: src/Views/Mouse.vala:35
+#: src/Views/Mouse.vala:35 src/Views/PointingStick.vala:41
 msgid "Adaptive"
 msgstr "Uyarlamalı"
 
-#: src/Views/Mouse.vala:47 src/Views/Touchpad.vala:126
+#: src/Views/Mouse.vala:47 src/Views/Touchpad.vala:125
 msgid "Scrolling moves the content, not the view"
+msgstr "Kaydırma, görünümü değil içeriği hareket ettirir"
+
+#: src/Views/PointingStick.vala:67
+msgid "While the middle button is held down"
 msgstr ""
 
 #: src/Views/Pointing.vala:23
@@ -288,57 +277,53 @@ msgid "This disables both levels of keys on the numeric keypad"
 msgstr ""
 "Bu, sayısal tuş takımındaki her iki tuş seviyesini de devre dışı bırakır"
 
-#: src/Views/Pointing.vala:37
+#: src/Views/Pointing.vala:42
 msgid "Small"
 msgstr "Küçük"
 
-#: src/Views/Pointing.vala:48
+#: src/Views/Pointing.vala:52
 msgid "Medium"
 msgstr "Orta"
 
-#: src/Views/Pointing.vala:59
+#: src/Views/Pointing.vala:62
 msgid "Large"
 msgstr "Büyük"
 
-#: src/Views/Pointing.vala:80
+#: src/Views/Pointing.vala:82
 msgid "Pressing the control key will highlight the position of the pointer"
 msgstr "Ctrl tuşuna basılması, işaretçinin konumunu vurgulayacaktır"
 
-#: src/Views/Touchpad.vala:40
+#: src/Views/Touchpad.vala:38
 msgid "Multitouch"
 msgstr "Çok noktalı dokunma"
 
-#: src/Views/Touchpad.vala:56
+#: src/Views/Touchpad.vala:55
 msgid "Areas"
 msgstr "Alana dokunma"
 
-#: src/Views/Touchpad.vala:89
+#: src/Views/Touchpad.vala:88
 msgid "Two-finger"
 msgstr "Çift parmak"
 
-#: src/Views/Touchpad.vala:104
+#: src/Views/Touchpad.vala:103
 msgid "Edge"
 msgstr "Kenar"
 
-#: src/Views/Touchpad.vala:135
-#, fuzzy
-#| msgid "Ignore:"
+#: src/Views/Touchpad.vala:134
 msgid "Ignore"
-msgstr "Yoksay:"
+msgstr "Yoksay"
 
-#: src/Views/Touchpad.vala:137
+#: src/Views/Touchpad.vala:136
 msgid "While typing"
 msgstr "Yazarken"
 
-#: src/Views/Touchpad.vala:138
+#: src/Views/Touchpad.vala:137
 msgid "When mouse is connected"
 msgstr "Fare bağlandığında"
 
-#: src/Views/Touchpad.vala:149
-#, fuzzy
-#| msgid "Tapping:"
+#: src/Views/Touchpad.vala:148
 msgid "Tapping"
-msgstr "Dokunma:"
+msgstr "Dokunma"
 
 #~ msgid "Double-click speed"
 #~ msgstr "Çift tıklama hızı"

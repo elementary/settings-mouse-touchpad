@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-11 01:10+0000\n"
+"POT-Creation-Date: 2026-01-28 15:14+0000\n"
 "PO-Revision-Date: 2024-01-30 16:38+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
@@ -21,141 +21,155 @@ msgstr ""
 "X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-02-16 06:46+0000\n"
 
-#: src/Plug.vala:53
+#: src/Plug.vala:55
 msgid "Mouse & Touchpad"
 msgstr "Миш и додирна табла"
 
-#: src/Plug.vala:54
+#: src/Plug.vala:56
 msgid "Configure mouse and touchpad"
 msgstr "Подесите миша и додирну таблу"
 
-#: src/Plug.vala:130 src/Views/Clicking.vala:25
+#: src/Plug.vala:123 src/Views/Clicking.vala:25
 msgid "Clicking"
 msgstr "Кликање"
 
-#: src/Plug.vala:131 src/Views/Clicking.vala:106
+#: src/Plug.vala:124 src/Views/Clicking.vala:106
 #, fuzzy
 #| msgid "Double-click speed"
 msgid "Double-click Speed"
 msgstr "Брзина двоклика"
 
-#: src/Plug.vala:132 src/Views/Clicking.vala:116
+#: src/Plug.vala:125 src/Views/Clicking.vala:116
 #, fuzzy
 #| msgid "Dwell click"
 msgid "Dwell Click"
 msgstr "Клик задржавања"
 
-#: src/Plug.vala:133 src/Views/Clicking.vala:32
+#: src/Plug.vala:126 src/Views/Clicking.vala:32
 #, fuzzy
 #| msgid "Primary button"
 msgid "Primary Button"
 msgstr "Примарно дугме"
 
-#: src/Plug.vala:134 src/Views/Clicking.vala:75
+#: src/Plug.vala:127 src/Views/Clicking.vala:75
 #, fuzzy
 #| msgid "Long-press secondary click"
 msgid "Long-press Secondary Click"
 msgstr "Дуги притисак другог клика"
 
-#: src/Plug.vala:135 src/Views/Clicking.vala:171
+#: src/Plug.vala:128 src/Views/Clicking.vala:171
 #, fuzzy
 #| msgid "Middle click paste"
 msgid "Middle Click Paste"
 msgstr "Средњи клик убацује"
 
-#: src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
+#: src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
 #: src/Views/Mouse.vala:11
 msgid "Mouse"
 msgstr "Миш"
 
-#: src/Plug.vala:138 src/Plug.vala:148 src/Views/Mouse.vala:27
-#: src/Views/Touchpad.vala:33
+#: src/Plug.vala:131 src/Plug.vala:137 src/Plug.vala:147
+#: src/Views/Mouse.vala:27 src/Views/PointingStick.vala:27
+#: src/Views/Touchpad.vala:28
 #, fuzzy
 #| msgid "Pointer speed"
 msgid "Pointer Speed"
 msgstr "Брзина показивача"
 
-#: src/Plug.vala:139 src/Views/Mouse.vala:59
+#: src/Plug.vala:132 src/Plug.vala:138 src/Views/Mouse.vala:59
+#: src/Views/PointingStick.vala:53
 #, fuzzy
 #| msgid "Pointer acceleration"
 msgid "Pointer Acceleration"
 msgstr "Убрзање показивача"
 
-#: src/Plug.vala:140 src/Plug.vala:153 src/Views/Mouse.vala:45
-#: src/Views/Touchpad.vala:124
+#: src/Plug.vala:133 src/Plug.vala:152 src/Views/Mouse.vala:45
+#: src/Views/Touchpad.vala:123
 #, fuzzy
 #| msgid "Natural scrolling"
 msgid "Natural Scrolling"
 msgstr "Природно премицање"
 
-#: src/Plug.vala:142 src/Views/Pointing.vala:10
+#: src/Plug.vala:135 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
+#: src/Views/PointingStick.vala:11
+#, fuzzy
+#| msgid "Pointing"
+msgid "Pointing Stick"
+msgstr "Указивање"
+
+#: src/Plug.vala:136
+msgid "TrackPoint"
+msgstr ""
+
+#: src/Plug.vala:139 src/Plug.vala:151 src/Views/PointingStick.vala:79
+#: src/Views/Touchpad.vala:83
+msgid "Scroll Method"
+msgstr ""
+
+#: src/Plug.vala:141 src/Views/Pointing.vala:10
 msgid "Pointing"
 msgstr "Указивање"
 
-#: src/Plug.vala:143 src/Views/Pointing.vala:87
+#: src/Plug.vala:142 src/Views/Pointing.vala:71
 #, fuzzy
 #| msgid "Pointer size"
 msgid "Pointer Size"
 msgstr "Величина показивача"
 
-#: src/Plug.vala:144 src/Views/Pointing.vala:78
+#: src/Plug.vala:143 src/Views/Pointing.vala:80
 #, fuzzy
 #| msgid "Reveal pointer"
 msgid "Reveal Pointer"
 msgstr "Приказује показивач"
 
-#: src/Plug.vala:145 src/Views/Pointing.vala:22
+#: src/Plug.vala:144 src/Views/Pointing.vala:22
 #, fuzzy
 #| msgid "Control pointer using keypad"
 msgid "Control Pointer Using Keypad"
 msgstr "Управљајте показивачем користећи бројевну површ"
 
-#: src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149 src/Plug.vala:150
-#: src/Plug.vala:151 src/Plug.vala:152 src/Plug.vala:153 src/Plug.vala:154
-#: src/Plug.vala:155 src/Views/Touchpad.vala:15
+#: src/Plug.vala:146 src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149
+#: src/Plug.vala:150 src/Plug.vala:151 src/Plug.vala:152 src/Plug.vala:153
+#: src/Plug.vala:154 src/Views/Touchpad.vala:10
 msgid "Touchpad"
 msgstr "Додирна табла"
 
-#: src/Plug.vala:149 src/Views/Touchpad.vala:72
+#: src/Plug.vala:148 src/Views/Touchpad.vala:71
 msgid "Tap to click"
 msgstr "Лупни за клик"
 
-#: src/Plug.vala:150 src/Views/Touchpad.vala:76
+#: src/Plug.vala:149 src/Views/Touchpad.vala:75
 msgid "Double-tap and move to drag"
 msgstr ""
 
-#: src/Plug.vala:151 src/Views/Touchpad.vala:66
+#: src/Plug.vala:150 src/Views/Touchpad.vala:65
 #, fuzzy
 #| msgid "Physical clicking:"
 msgid "Physical Secondary Clicking"
 msgstr "Физичко кликање:"
 
-#: src/Plug.vala:152 src/Views/Touchpad.vala:84
-msgid "Scroll Method"
-msgstr ""
-
-#: src/Plug.vala:154
+#: src/Plug.vala:153
 msgid "Ignore while typing"
 msgstr "Занемари приликом куцања"
 
-#: src/Plug.vala:155
+#: src/Plug.vala:154
 msgid "Ignore when mouse is connected"
 msgstr "Занемари када је миш повезан"
 
-#: src/Plug.vala:158 src/Plug.vala:159 src/Plug.vala:160 src/Plug.vala:161
+#: src/Plug.vala:157 src/Plug.vala:158 src/Plug.vala:159 src/Plug.vala:160
 #: src/Views/Gestures.vala:25
 msgid "Gestures"
 msgstr "Покрети"
 
-#: src/Plug.vala:159 src/Views/Gestures.vala:66 src/Views/Gestures.vala:74
+#: src/Plug.vala:158 src/Views/Gestures.vala:74 src/Views/Gestures.vala:83
 msgid "Multitasking View"
 msgstr "Преглед са више задатака"
 
-#: src/Plug.vala:160
+#: src/Plug.vala:159
 msgid "Switch Workspaces"
 msgstr "Промени радне просторе"
 
-#: src/Plug.vala:161
+#: src/Plug.vala:160
 msgid "Maximize Window"
 msgstr "Увећај прозор"
 
@@ -191,151 +205,157 @@ msgstr "Задржите показивач све до аутоматског �
 msgid "Middle or three-finger click on an input to paste selected text"
 msgstr "Средњи или клик три прста на унос за убацивање изабраног текста"
 
-#: src/Views/Clicking.vala:235 src/Views/Clicking.vala:240
+#: src/Views/Clicking.vala:223 src/Views/Clicking.vala:228
 #, fuzzy, c-format
 #| msgid "seconds"
 msgid "%.1f seconds"
 msgstr "секунди"
 
-#: src/Views/Gestures.vala:32
-msgid "Swipe Horizontally"
-msgstr ""
-
-#: src/Views/Gestures.vala:34 src/Views/Gestures.vala:60
-#: src/Views/Gestures.vala:80
-msgid "Three fingers:"
-msgstr ""
-
-#: src/Views/Gestures.vala:41 src/Views/Gestures.vala:51
-#: src/Views/Gestures.vala:65 src/Views/Gestures.vala:73
-#: src/Views/Gestures.vala:85 src/Views/Gestures.vala:93
+#: src/Views/Gestures.vala:35 src/Views/Gestures.vala:46
+#: src/Views/Gestures.vala:73 src/Views/Gestures.vala:82
+#: src/Views/Gestures.vala:108 src/Views/Gestures.vala:117
 msgid "Do nothing"
 msgstr "Не ради ништа"
 
-#: src/Views/Gestures.vala:42 src/Views/Gestures.vala:52
+#: src/Views/Gestures.vala:36 src/Views/Gestures.vala:47
 #, fuzzy
 #| msgid "Switch Workspaces"
 msgid "Switch to workspace"
 msgstr "Промени радне просторе"
 
-#: src/Views/Gestures.vala:43 src/Views/Gestures.vala:53
+#: src/Views/Gestures.vala:37 src/Views/Gestures.vala:48
 #, fuzzy
 #| msgid "Switch Workspaces"
 msgid "Move active window to workspace"
 msgstr "Промени радне просторе"
 
-#: src/Views/Gestures.vala:44 src/Views/Gestures.vala:54
+#: src/Views/Gestures.vala:38 src/Views/Gestures.vala:49
 #, fuzzy
 #| msgid "Tile Window"
 msgid "Cycle windows"
 msgstr "Поплочај прозор"
 
-#: src/Views/Gestures.vala:46 src/Views/Gestures.vala:68
-#: src/Views/Gestures.vala:88
+#: src/Views/Gestures.vala:40 src/Views/Gestures.vala:76
+#: src/Views/Gestures.vala:111
+msgid "Three fingers:"
+msgstr ""
+
+#: src/Views/Gestures.vala:51 src/Views/Gestures.vala:85
+#: src/Views/Gestures.vala:120
 #, fuzzy
 #| msgid "Two-finger"
 msgid "Four fingers:"
 msgstr "Два прста"
 
-#: src/Views/Gestures.vala:56
+#: src/Views/Gestures.vala:66
+msgid "Swipe Horizontally"
+msgstr ""
+
+#: src/Views/Gestures.vala:100
 msgid "Swipe Up"
 msgstr ""
 
-#: src/Views/Gestures.vala:76
-msgid "Pinch"
-msgstr ""
-
-#: src/Views/Gestures.vala:86 src/Views/Gestures.vala:94
+#: src/Views/Gestures.vala:109 src/Views/Gestures.vala:118
 msgid "Zoom"
 msgstr "Увеличај"
 
-#: src/Views/Gestures.vala:130 src/Views/Gestures.vala:131
+#: src/Views/Gestures.vala:135
+msgid "Pinch"
+msgstr ""
+
+#: src/Views/Gestures.vala:162 src/Views/Gestures.vala:163
 msgid "Toggle maximized"
 msgstr ""
 
-#: src/Views/Mouse.vala:9
+#: src/Views/Mouse.vala:9 src/Views/PointingStick.vala:9
 msgid "Devices"
 msgstr "Уређаји"
 
-#: src/Views/Mouse.vala:23 src/Views/Pointing.vala:32
-#: src/Views/Touchpad.vala:29
+#: src/Views/Mouse.vala:23 src/Views/PointingStick.vala:23
+#: src/Views/Pointing.vala:32 src/Views/Touchpad.vala:24
 msgid "Slower"
 msgstr ""
 
-#: src/Views/Mouse.vala:25 src/Views/Pointing.vala:34
-#: src/Views/Touchpad.vala:31
+#: src/Views/Mouse.vala:25 src/Views/PointingStick.vala:25
+#: src/Views/Pointing.vala:34 src/Views/Touchpad.vala:26
 msgid "Faster"
 msgstr ""
 
-#: src/Views/Mouse.vala:31
+#: src/Views/Mouse.vala:31 src/Views/PointingStick.vala:31
+#: src/Views/PointingStick.vala:57
 msgid "Hardware default"
 msgstr "Основно хардвера"
 
-#: src/Views/Mouse.vala:32
+#: src/Views/Mouse.vala:32 src/Views/PointingStick.vala:36
+#: src/Views/PointingStick.vala:62
 msgid "None"
 msgstr "Ништа"
 
-#: src/Views/Mouse.vala:35
+#: src/Views/Mouse.vala:35 src/Views/PointingStick.vala:41
 msgid "Adaptive"
 msgstr "Прилагодљиво"
 
-#: src/Views/Mouse.vala:47 src/Views/Touchpad.vala:126
+#: src/Views/Mouse.vala:47 src/Views/Touchpad.vala:125
 msgid "Scrolling moves the content, not the view"
+msgstr ""
+
+#: src/Views/PointingStick.vala:67
+msgid "While the middle button is held down"
 msgstr ""
 
 #: src/Views/Pointing.vala:23
 msgid "This disables both levels of keys on the numeric keypad"
 msgstr "Ово искључује оба нивоа тастера на бројевној тастатури"
 
-#: src/Views/Pointing.vala:37
+#: src/Views/Pointing.vala:42
 msgid "Small"
 msgstr "Мало"
 
-#: src/Views/Pointing.vala:48
+#: src/Views/Pointing.vala:52
 msgid "Medium"
 msgstr "Средњи"
 
-#: src/Views/Pointing.vala:59
+#: src/Views/Pointing.vala:62
 msgid "Large"
 msgstr "Велико"
 
-#: src/Views/Pointing.vala:80
+#: src/Views/Pointing.vala:82
 msgid "Pressing the control key will highlight the position of the pointer"
 msgstr "Притисак на управљачки тастер истакнуће положај показивача"
 
-#: src/Views/Touchpad.vala:40
+#: src/Views/Touchpad.vala:38
 msgid "Multitouch"
 msgstr "Више додирно"
 
-#: src/Views/Touchpad.vala:56
+#: src/Views/Touchpad.vala:55
 msgid "Areas"
 msgstr ""
 
-#: src/Views/Touchpad.vala:89
+#: src/Views/Touchpad.vala:88
 msgid "Two-finger"
 msgstr "Два прста"
 
-#: src/Views/Touchpad.vala:104
+#: src/Views/Touchpad.vala:103
 msgid "Edge"
 msgstr "Ивица"
 
-#: src/Views/Touchpad.vala:135
+#: src/Views/Touchpad.vala:134
 msgid "Ignore"
 msgstr ""
 
-#: src/Views/Touchpad.vala:137
+#: src/Views/Touchpad.vala:136
 #, fuzzy
 #| msgid "Ignore while typing"
 msgid "While typing"
 msgstr "Занемари приликом куцања"
 
-#: src/Views/Touchpad.vala:138
+#: src/Views/Touchpad.vala:137
 #, fuzzy
 #| msgid "Ignore when mouse is connected"
 msgid "When mouse is connected"
 msgstr "Занемари када је миш повезан"
 
-#: src/Views/Touchpad.vala:149
+#: src/Views/Touchpad.vala:148
 msgid "Tapping"
 msgstr ""
 

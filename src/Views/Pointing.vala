@@ -34,41 +34,43 @@ public class MouseTouchpad.PointingView : Switchboard.SettingsPage {
         pointer_speed_scale.add_mark (990, BOTTOM, _("Faster"));
 
         var cursor_size_24 = new Gtk.CheckButton () {
+            action_name = "pointing.cursor-size",
+            action_target = new Variant.int32 (24),
+            child = new Gtk.Image.from_icon_name ("mouse-touchpad-pointing-symbolic") {
+                pixel_size = 24
+            },
             tooltip_text = _("Small")
         };
         cursor_size_24.add_css_class ("image-button");
 
-        var cursor_size_24_image = new Gtk.Image.from_icon_name ("mouse-touchpad-pointing-symbolic") {
-            pixel_size = 24
-        };
-        cursor_size_24_image.set_parent (cursor_size_24);
-
         var cursor_size_32 = new Gtk.CheckButton () {
-            group = cursor_size_24,
+            action_name = "pointing.cursor-size",
+            action_target = new Variant.int32 (32),
+            child = new Gtk.Image.from_icon_name ("mouse-touchpad-pointing-symbolic") {
+                pixel_size = 32
+            },
             tooltip_text = _("Medium")
         };
         cursor_size_32.add_css_class ("image-button");
 
-        var cursor_size_32_image = new Gtk.Image.from_icon_name ("mouse-touchpad-pointing-symbolic") {
-            pixel_size = 32
-        };
-        cursor_size_32_image.set_parent (cursor_size_32);
-
         var cursor_size_48 = new Gtk.CheckButton () {
-            group = cursor_size_24,
+            action_name = "pointing.cursor-size",
+            action_target = new Variant.int32 (48),
+            child = new Gtk.Image.from_icon_name ("mouse-touchpad-pointing-symbolic") {
+                pixel_size = 48
+            },
             tooltip_text = _("Large")
         };
         cursor_size_48.add_css_class ("image-button");
 
-        var cursor_size_48_image = new Gtk.Image.from_icon_name ("mouse-touchpad-pointing-symbolic") {
-            pixel_size = 48
-        };
-        cursor_size_48_image.set_parent (cursor_size_48);
-
-        var cursor_size_box = new Gtk.Box (HORIZONTAL, 24);
+        var cursor_size_box = new Granite.Box (HORIZONTAL, DOUBLE);
         cursor_size_box.append (cursor_size_24);
         cursor_size_box.append (cursor_size_32);
         cursor_size_box.append (cursor_size_48);
+
+        var cursor_size_header = new Granite.HeaderLabel (_("Pointer Size")) {
+            mnemonic_widget = cursor_size_box
+        };
 
         var reveal_pointer_switch = new Gtk.Switch () {
             halign = END,
@@ -84,7 +86,7 @@ public class MouseTouchpad.PointingView : Switchboard.SettingsPage {
             row_spacing = 6
         };
 
-        content_area.attach (new Granite.HeaderLabel (_("Pointer Size")), 0, 0);
+        content_area.attach (cursor_size_header, 0, 0);
         content_area.attach (cursor_size_box, 0, 1);
 
         content_area.attach (reveal_pointer_label, 0, 2);
@@ -119,27 +121,9 @@ public class MouseTouchpad.PointingView : Switchboard.SettingsPage {
         var interface_settings = new GLib.Settings ("org.gnome.desktop.interface");
         interface_settings.bind ("locate-pointer", reveal_pointer_switch, "active", DEFAULT);
 
-        switch (interface_settings.get_int ("cursor-size")) {
-            case 32:
-                cursor_size_32.active = true;
-                break;
-            case 48:
-                cursor_size_48.active = true;
-                break;
-            default:
-                cursor_size_24.active = true;
-        }
+        var action_group = new SimpleActionGroup ();
+        action_group.add_action (interface_settings.create_action ("cursor-size"));
 
-        cursor_size_24.toggled.connect (() => {
-            interface_settings.set_int ("cursor-size", 24);
-        });
-
-        cursor_size_32.toggled.connect (() => {
-            interface_settings.set_int ("cursor-size", 32);
-        });
-
-        cursor_size_48.toggled.connect (() => {
-            interface_settings.set_int ("cursor-size", 48);
-        });
+        insert_action_group ("pointing", action_group);
     }
 }

@@ -2,6 +2,7 @@ plug_files = files(
     'Plug.vala',
     'Views/Clicking.vala',
     'Views/Mouse.vala',
+    'Views/PointingStick.vala',
     'Views/Pointing.vala',
     'Views/Touchpad.vala',
     'Views/Gestures.vala',

@@ -3,5 +3,6 @@ src/Utils/ToucheggSettings.vala
 src/Views/Clicking.vala
 src/Views/Gestures.vala
 src/Views/Mouse.vala
+src/Views/PointingStick.vala
 src/Views/Pointing.vala
 src/Views/Touchpad.vala

@@ -36,6 +36,17 @@ public class MouseTouchpad.MouseView : Switchboard.SettingsPage {
             group = accel_profile_default
         };
 
+        var accel_profile_box = new Granite.Box (VERTICAL, HALF) {
+            accessible_role = LIST
+        };
+        accel_profile_box.append (accel_profile_default);
+        accel_profile_box.append (accel_profile_flat);
+        accel_profile_box.append (accel_profile_adaptive);
+
+        var accel_profile_header = new Granite.HeaderLabel (_("Pointer Acceleration")) {
+            mnemonic_widget = accel_profile_box
+        };
+
         var natural_scrolling_switch = new Gtk.Switch () {
             halign = END,
             hexpand = true,
@@ -47,19 +58,17 @@ public class MouseTouchpad.MouseView : Switchboard.SettingsPage {
             secondary_text = _("Scrolling moves the content, not the view")
         };
 
-        var natural_scrolling_box = new Gtk.Box (HORIZONTAL, 12) {
+        var natural_scrolling_box = new Granite.Box (HORIZONTAL) {
             margin_top = 12
         };
         natural_scrolling_box.append (natural_scrolling_header);
         natural_scrolling_box.append (natural_scrolling_switch);
 
-        var content_box = new Gtk.Box (VERTICAL, 6);
+        var content_box = new Granite.Box (VERTICAL, HALF);
         content_box.append (pointer_speed_header);
         content_box.append (pointer_speed_scale);
-        content_box.append (new Granite.HeaderLabel (_("Pointer Acceleration")));
-        content_box.append (accel_profile_default);
-        content_box.append (accel_profile_flat);
-        content_box.append (accel_profile_adaptive);
+        content_box.append (accel_profile_header);
+        content_box.append (accel_profile_box);
         content_box.append (natural_scrolling_box);
 
         child = content_box;

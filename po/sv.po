@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-28 15:14+0000\n"
-"PO-Revision-Date: 2025-10-31 10:55+0000\n"
+"PO-Revision-Date: 2026-01-29 17:36+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/settings/"
 "mouse-touchpad/sv/>\n"
@@ -75,14 +75,12 @@ msgstr "Naturlig rullning"
 
 #: src/Plug.vala:135 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 #: src/Views/PointingStick.vala:11
-#, fuzzy
-#| msgid "Pointing"
 msgid "Pointing Stick"
-msgstr "Pekning"
+msgstr "Pekpinne"
 
 #: src/Plug.vala:136
 msgid "TrackPoint"
-msgstr ""
+msgstr "TrackPoint"
 
 #: src/Plug.vala:139 src/Plug.vala:151 src/Views/PointingStick.vala:79
 #: src/Views/Touchpad.vala:83
@@ -269,7 +267,7 @@ msgstr "Rullning flyttar innehållet, inte vyn"
 
 #: src/Views/PointingStick.vala:67
 msgid "While the middle button is held down"
-msgstr ""
+msgstr "När mittenknappen hålls ner"
 
 #: src/Views/Pointing.vala:23
 msgid "This disables both levels of keys on the numeric keypad"

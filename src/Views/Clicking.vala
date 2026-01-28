@@ -161,47 +161,19 @@ public class MouseTouchpad.ClickingView : Switchboard.SettingsPage {
         insert_action_group ("clicking", action_group);
 
         var a11y_mouse_settings = new GLib.Settings ("org.gnome.desktop.a11y.mouse");
-        a11y_mouse_settings.bind (
-            "secondary-click-enabled",
-            hold_switch,
-            "active",
-            GLib.SettingsBindFlags.DEFAULT
-        );
-        a11y_mouse_settings.bind (
-            "secondary-click-time",
-            hold_scale_adjustment,
-            "value",
-            GLib.SettingsBindFlags.DEFAULT
-        );
+        a11y_mouse_settings.bind ("secondary-click-enabled", hold_switch, "active", DEFAULT);
+        a11y_mouse_settings.bind ("secondary-click-enabled", hold_scale, "sensitive", DEFAULT);
+        a11y_mouse_settings.bind ("secondary-click-enabled", hold_spin_box, "sensitive", DEFAULT);
+        a11y_mouse_settings.bind ("secondary-click-time", hold_scale_adjustment, "value", DEFAULT);
 
-        a11y_mouse_settings.bind ("dwell-click-enabled", dwell_click_delay_scale, "sensitive", SettingsBindFlags.GET);
-        a11y_mouse_settings.bind ("dwell-click-enabled", dwell_click_spin_box, "sensitive", SettingsBindFlags.GET);
-        a11y_mouse_settings.bind ("dwell-click-enabled", dwell_click_switch, "active", SettingsBindFlags.DEFAULT);
-        a11y_mouse_settings.bind ("dwell-time", dwell_click_adjustment, "value", SettingsBindFlags.DEFAULT);
-
-        hold_switch.bind_property ("active", hold_scale, "sensitive", BindingFlags.SYNC_CREATE);
-        hold_switch.bind_property ("active", hold_spin_box, "sensitive", BindingFlags.SYNC_CREATE);
+        a11y_mouse_settings.bind ("dwell-click-enabled", dwell_click_delay_scale, "sensitive", GET);
+        a11y_mouse_settings.bind ("dwell-click-enabled", dwell_click_spin_box, "sensitive", GET);
+        a11y_mouse_settings.bind ("dwell-click-enabled", dwell_click_switch, "active", DEFAULT);
+        a11y_mouse_settings.bind ("dwell-time", dwell_click_adjustment, "value", DEFAULT);
 
         var mouse_settings = new GLib.Settings ("org.gnome.desktop.peripherals.mouse");
-        mouse_settings.bind ("double-click", double_click_speed_adjustment, "value", SettingsBindFlags.DEFAULT);
-
-        if (mouse_settings.get_boolean ("left-handed")) {
-            mouse_right.active = true;
-        } else {
-            mouse_left.active = true;
-        }
-
-        mouse_left.toggled.connect (() => {
-            if (mouse_left.active) {
-                mouse_settings.set_boolean ("left-handed", false);
-            }
-        });
-
-        mouse_right.toggled.connect (() => {
-            if (mouse_right.active) {
-                mouse_settings.set_boolean ("left-handed", true);
-            }
-        });
+        mouse_settings.bind ("double-click", double_click_speed_adjustment, "value", DEFAULT);
+        mouse_settings.bind ("left-handed", mouse_right, "active", DEFAULT);
 
         dwell_click_spinbutton.output.connect (() => {
             dwell_click_spinbutton.text = _("%.1f seconds").printf (dwell_click_adjustment.value);

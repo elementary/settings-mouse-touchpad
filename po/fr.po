@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-28 15:14+0000\n"
+"POT-Creation-Date: 2026-01-29 17:36+0000\n"
 "PO-Revision-Date: 2024-02-07 10:31+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -59,17 +59,17 @@ msgstr "Souris"
 
 #: src/Plug.vala:131 src/Plug.vala:137 src/Plug.vala:147
 #: src/Views/Mouse.vala:27 src/Views/PointingStick.vala:27
-#: src/Views/Touchpad.vala:28
+#: src/Views/Touchpad.vala:31
 msgid "Pointer Speed"
 msgstr "Vitesse du pointeur"
 
-#: src/Plug.vala:132 src/Plug.vala:138 src/Views/Mouse.vala:59
+#: src/Plug.vala:132 src/Plug.vala:138 src/Views/Mouse.vala:46
 #: src/Views/PointingStick.vala:53
 msgid "Pointer Acceleration"
 msgstr "Accélération du pointeur"
 
-#: src/Plug.vala:133 src/Plug.vala:152 src/Views/Mouse.vala:45
-#: src/Views/Touchpad.vala:123
+#: src/Plug.vala:133 src/Plug.vala:152 src/Views/Mouse.vala:56
+#: src/Views/Touchpad.vala:137
 msgid "Natural Scrolling"
 msgstr "Défilement naturel"
 
@@ -85,7 +85,7 @@ msgid "TrackPoint"
 msgstr ""
 
 #: src/Plug.vala:139 src/Plug.vala:151 src/Views/PointingStick.vala:79
-#: src/Views/Touchpad.vala:83
+#: src/Views/Touchpad.vala:97
 msgid "Scroll Method"
 msgstr "Méthode de défilement"
 
@@ -107,19 +107,19 @@ msgstr "Contrôler le pointeur en utilisant le pavé numérique"
 
 #: src/Plug.vala:146 src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149
 #: src/Plug.vala:150 src/Plug.vala:151 src/Plug.vala:152 src/Plug.vala:153
-#: src/Plug.vala:154 src/Views/Touchpad.vala:10
+#: src/Plug.vala:154 src/Views/Touchpad.vala:13
 msgid "Touchpad"
 msgstr "Pavé tactile"
 
-#: src/Plug.vala:148 src/Views/Touchpad.vala:71
+#: src/Plug.vala:148 src/Views/Touchpad.vala:74
 msgid "Tap to click"
 msgstr "Taper pour cliquer"
 
-#: src/Plug.vala:149 src/Views/Touchpad.vala:75
+#: src/Plug.vala:149 src/Views/Touchpad.vala:78
 msgid "Double-tap and move to drag"
 msgstr "Taper deux fois sur une fenêtre pour la déplacer manuellement"
 
-#: src/Plug.vala:150 src/Views/Touchpad.vala:65
+#: src/Plug.vala:150 src/Views/Touchpad.vala:68
 msgid "Physical Secondary Clicking"
 msgstr "Clic physique secondaire"
 
@@ -244,12 +244,12 @@ msgid "Devices"
 msgstr "Périphériques"
 
 #: src/Views/Mouse.vala:23 src/Views/PointingStick.vala:23
-#: src/Views/Pointing.vala:32 src/Views/Touchpad.vala:24
+#: src/Views/Pointing.vala:32 src/Views/Touchpad.vala:27
 msgid "Slower"
 msgstr "Plus lent"
 
 #: src/Views/Mouse.vala:25 src/Views/PointingStick.vala:25
-#: src/Views/Pointing.vala:34 src/Views/Touchpad.vala:26
+#: src/Views/Pointing.vala:34 src/Views/Touchpad.vala:29
 msgid "Faster"
 msgstr "Plus rapide"
 
@@ -267,7 +267,7 @@ msgstr "Aucun"
 msgid "Adaptive"
 msgstr "Adaptative"
 
-#: src/Views/Mouse.vala:47 src/Views/Touchpad.vala:125
+#: src/Views/Mouse.vala:58 src/Views/Touchpad.vala:139
 msgid "Scrolling moves the content, not the view"
 msgstr "Le défilement déplace le contenu, pas la page"
 
@@ -296,37 +296,41 @@ msgid "Pressing the control key will highlight the position of the pointer"
 msgstr ""
 "L'appui sur la touche contrôle mettra en valeur la position du pointeur"
 
-#: src/Views/Touchpad.vala:38
+#: src/Views/Touchpad.vala:41
 msgid "Multitouch"
 msgstr "Multi-touch"
 
-#: src/Views/Touchpad.vala:55
+#: src/Views/Touchpad.vala:58
 msgid "Areas"
 msgstr "Zones"
 
-#: src/Views/Touchpad.vala:88
+#: src/Views/Touchpad.vala:82
+msgid "Continue dragging if the finger is only lifted briefly"
+msgstr ""
+
+#: src/Views/Touchpad.vala:93
+msgid "Tapping"
+msgstr "Taper"
+
+#: src/Views/Touchpad.vala:102
 msgid "Two-finger"
 msgstr "À deux doigts"
 
-#: src/Views/Touchpad.vala:103
+#: src/Views/Touchpad.vala:117
 msgid "Edge"
 msgstr "Bord"
 
-#: src/Views/Touchpad.vala:134
+#: src/Views/Touchpad.vala:148
 msgid "Ignore"
 msgstr "Ignorer"
 
-#: src/Views/Touchpad.vala:136
+#: src/Views/Touchpad.vala:150
 msgid "While typing"
 msgstr "Lors de la frappe"
 
-#: src/Views/Touchpad.vala:137
+#: src/Views/Touchpad.vala:151
 msgid "When mouse is connected"
 msgstr "Lorsqu'une souris est connectée"
-
-#: src/Views/Touchpad.vala:148
-msgid "Tapping"
-msgstr "Taper"
 
 #~ msgid "Double-click speed"
 #~ msgstr "Vitesse du double-clic"

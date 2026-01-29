@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-28 15:14+0000\n"
+"POT-Creation-Date: 2026-01-29 17:40+0000\n"
 "PO-Revision-Date: 2024-09-24 11:24+0000\n"
 "Last-Translator: Sinan Decron <sinanveyasinan@gmail.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -59,17 +59,17 @@ msgstr "Fare"
 
 #: src/Plug.vala:131 src/Plug.vala:137 src/Plug.vala:147
 #: src/Views/Mouse.vala:27 src/Views/PointingStick.vala:27
-#: src/Views/Touchpad.vala:28
+#: src/Views/Touchpad.vala:31
 msgid "Pointer Speed"
 msgstr "İşaretçi Hızı"
 
-#: src/Plug.vala:132 src/Plug.vala:138 src/Views/Mouse.vala:59
+#: src/Plug.vala:132 src/Plug.vala:138 src/Views/Mouse.vala:46
 #: src/Views/PointingStick.vala:53
 msgid "Pointer Acceleration"
 msgstr "İşaretçi Hızlandırması"
 
-#: src/Plug.vala:133 src/Plug.vala:152 src/Views/Mouse.vala:45
-#: src/Views/Touchpad.vala:123
+#: src/Plug.vala:133 src/Plug.vala:152 src/Views/Mouse.vala:56
+#: src/Views/Touchpad.vala:137
 msgid "Natural Scrolling"
 msgstr "Doğal Kaydırma"
 
@@ -85,7 +85,7 @@ msgid "TrackPoint"
 msgstr ""
 
 #: src/Plug.vala:139 src/Plug.vala:151 src/Views/PointingStick.vala:79
-#: src/Views/Touchpad.vala:83
+#: src/Views/Touchpad.vala:97
 msgid "Scroll Method"
 msgstr "Kaydırma Yöntemi"
 
@@ -107,19 +107,19 @@ msgstr "İşaretçiyi Tuş Takımını Kullanarak Kontrol Et"
 
 #: src/Plug.vala:146 src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149
 #: src/Plug.vala:150 src/Plug.vala:151 src/Plug.vala:152 src/Plug.vala:153
-#: src/Plug.vala:154 src/Views/Touchpad.vala:10
+#: src/Plug.vala:154 src/Views/Touchpad.vala:13
 msgid "Touchpad"
 msgstr "Dokunmatik Yüzey"
 
-#: src/Plug.vala:148 src/Views/Touchpad.vala:71
+#: src/Plug.vala:148 src/Views/Touchpad.vala:74
 msgid "Tap to click"
 msgstr "Dokunarak tıklama"
 
-#: src/Plug.vala:149 src/Views/Touchpad.vala:75
+#: src/Plug.vala:149 src/Views/Touchpad.vala:78
 msgid "Double-tap and move to drag"
 msgstr "Sürüklemek için iki kez dokunun ve hareket ettirin"
 
-#: src/Plug.vala:150 src/Views/Touchpad.vala:65
+#: src/Plug.vala:150 src/Views/Touchpad.vala:68
 msgid "Physical Secondary Clicking"
 msgstr "Fiziksel İkincil Tıklama"
 
@@ -241,12 +241,12 @@ msgid "Devices"
 msgstr "Aygıtlar"
 
 #: src/Views/Mouse.vala:23 src/Views/PointingStick.vala:23
-#: src/Views/Pointing.vala:32 src/Views/Touchpad.vala:24
+#: src/Views/Pointing.vala:32 src/Views/Touchpad.vala:27
 msgid "Slower"
 msgstr "Daha Yavaş"
 
 #: src/Views/Mouse.vala:25 src/Views/PointingStick.vala:25
-#: src/Views/Pointing.vala:34 src/Views/Touchpad.vala:26
+#: src/Views/Pointing.vala:34 src/Views/Touchpad.vala:29
 msgid "Faster"
 msgstr "Daha Hızlı"
 
@@ -264,7 +264,7 @@ msgstr "Yok"
 msgid "Adaptive"
 msgstr "Uyarlamalı"
 
-#: src/Views/Mouse.vala:47 src/Views/Touchpad.vala:125
+#: src/Views/Mouse.vala:58 src/Views/Touchpad.vala:139
 msgid "Scrolling moves the content, not the view"
 msgstr "Kaydırma, görünümü değil içeriği hareket ettirir"
 
@@ -293,37 +293,41 @@ msgstr "Büyük"
 msgid "Pressing the control key will highlight the position of the pointer"
 msgstr "Ctrl tuşuna basılması, işaretçinin konumunu vurgulayacaktır"
 
-#: src/Views/Touchpad.vala:38
+#: src/Views/Touchpad.vala:41
 msgid "Multitouch"
 msgstr "Çok noktalı dokunma"
 
-#: src/Views/Touchpad.vala:55
+#: src/Views/Touchpad.vala:58
 msgid "Areas"
 msgstr "Alana dokunma"
 
-#: src/Views/Touchpad.vala:88
+#: src/Views/Touchpad.vala:82
+msgid "Continue dragging if the finger is only lifted briefly"
+msgstr ""
+
+#: src/Views/Touchpad.vala:93
+msgid "Tapping"
+msgstr "Dokunma"
+
+#: src/Views/Touchpad.vala:102
 msgid "Two-finger"
 msgstr "Çift parmak"
 
-#: src/Views/Touchpad.vala:103
+#: src/Views/Touchpad.vala:117
 msgid "Edge"
 msgstr "Kenar"
 
-#: src/Views/Touchpad.vala:134
+#: src/Views/Touchpad.vala:148
 msgid "Ignore"
 msgstr "Yoksay"
 
-#: src/Views/Touchpad.vala:136
+#: src/Views/Touchpad.vala:150
 msgid "While typing"
 msgstr "Yazarken"
 
-#: src/Views/Touchpad.vala:137
+#: src/Views/Touchpad.vala:151
 msgid "When mouse is connected"
 msgstr "Fare bağlandığında"
-
-#: src/Views/Touchpad.vala:148
-msgid "Tapping"
-msgstr "Dokunma"
 
 #~ msgid "Double-click speed"
 #~ msgstr "Çift tıklama hızı"

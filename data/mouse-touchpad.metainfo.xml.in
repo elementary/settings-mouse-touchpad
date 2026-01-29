@@ -43,6 +43,20 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="8.1.0" date="2026-01-29" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Improved screen reader compatibility</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/settings-mouse-touchpad/issues/171">Add touchpad drag-lock related settings</issue>
+        <issue url="https://github.com/elementary/settings-mouse-touchpad/issues/259">Expose TrackPoint settings if available</issue>
+      </issues>
+    </release>
+
     <release version="8.0.3" date="2025-11-17" urgency="medium">
       <description>
         <p>Minor updates:</p>

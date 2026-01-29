@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-28 15:14+0000\n"
-"PO-Revision-Date: 2024-01-30 16:38+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-mouse-touchpad/ca/>\n"
+"POT-Creation-Date: 2026-01-29 17:40+0000\n"
+"PO-Revision-Date: 2026-01-29 17:36+0000\n"
+"Last-Translator: David M <rbndavid@gmail.com>\n"
+"Language-Team: Catalan <https://l10n.elementaryos.org/projects/settings/"
+"mouse-touchpad/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-02-16 06:46+0000\n"
 
 #: src/Plug.vala:55
@@ -59,33 +59,31 @@ msgstr "Ratolí"
 
 #: src/Plug.vala:131 src/Plug.vala:137 src/Plug.vala:147
 #: src/Views/Mouse.vala:27 src/Views/PointingStick.vala:27
-#: src/Views/Touchpad.vala:28
+#: src/Views/Touchpad.vala:31
 msgid "Pointer Speed"
 msgstr "Velocitat del punter"
 
-#: src/Plug.vala:132 src/Plug.vala:138 src/Views/Mouse.vala:59
+#: src/Plug.vala:132 src/Plug.vala:138 src/Views/Mouse.vala:46
 #: src/Views/PointingStick.vala:53
 msgid "Pointer Acceleration"
 msgstr "Acceleració del punter"
 
-#: src/Plug.vala:133 src/Plug.vala:152 src/Views/Mouse.vala:45
-#: src/Views/Touchpad.vala:123
+#: src/Plug.vala:133 src/Plug.vala:152 src/Views/Mouse.vala:56
+#: src/Views/Touchpad.vala:137
 msgid "Natural Scrolling"
 msgstr "Desplaçament natural"
 
 #: src/Plug.vala:135 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 #: src/Views/PointingStick.vala:11
-#, fuzzy
-#| msgid "Pointing"
 msgid "Pointing Stick"
-msgstr "Punter"
+msgstr "Llapis apuntador"
 
 #: src/Plug.vala:136
 msgid "TrackPoint"
-msgstr ""
+msgstr "Ratolí de botó"
 
 #: src/Plug.vala:139 src/Plug.vala:151 src/Views/PointingStick.vala:79
-#: src/Views/Touchpad.vala:83
+#: src/Views/Touchpad.vala:97
 msgid "Scroll Method"
 msgstr "Mètode de desplaçament"
 
@@ -107,19 +105,19 @@ msgstr "Controla el punter amb el teclat numèric"
 
 #: src/Plug.vala:146 src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149
 #: src/Plug.vala:150 src/Plug.vala:151 src/Plug.vala:152 src/Plug.vala:153
-#: src/Plug.vala:154 src/Views/Touchpad.vala:10
+#: src/Plug.vala:154 src/Views/Touchpad.vala:13
 msgid "Touchpad"
 msgstr "Ratolí tàctil"
 
-#: src/Plug.vala:148 src/Views/Touchpad.vala:71
+#: src/Plug.vala:148 src/Views/Touchpad.vala:74
 msgid "Tap to click"
 msgstr "Toc per fer clic"
 
-#: src/Plug.vala:149 src/Views/Touchpad.vala:75
+#: src/Plug.vala:149 src/Views/Touchpad.vala:78
 msgid "Double-tap and move to drag"
 msgstr "Toc doble i moviment per a arrossegar"
 
-#: src/Plug.vala:150 src/Views/Touchpad.vala:65
+#: src/Plug.vala:150 src/Views/Touchpad.vala:68
 msgid "Physical Secondary Clicking"
 msgstr "Clic secundari físic"
 
@@ -242,12 +240,12 @@ msgid "Devices"
 msgstr "Dispositius"
 
 #: src/Views/Mouse.vala:23 src/Views/PointingStick.vala:23
-#: src/Views/Pointing.vala:32 src/Views/Touchpad.vala:24
+#: src/Views/Pointing.vala:32 src/Views/Touchpad.vala:27
 msgid "Slower"
 msgstr "Més lent"
 
 #: src/Views/Mouse.vala:25 src/Views/PointingStick.vala:25
-#: src/Views/Pointing.vala:34 src/Views/Touchpad.vala:26
+#: src/Views/Pointing.vala:34 src/Views/Touchpad.vala:29
 msgid "Faster"
 msgstr "Més ràpid"
 
@@ -265,13 +263,13 @@ msgstr "Cap"
 msgid "Adaptive"
 msgstr "Adaptatiu"
 
-#: src/Views/Mouse.vala:47 src/Views/Touchpad.vala:125
+#: src/Views/Mouse.vala:58 src/Views/Touchpad.vala:139
 msgid "Scrolling moves the content, not the view"
 msgstr "El desplaçament mou el contingut, no la vista."
 
 #: src/Views/PointingStick.vala:67
 msgid "While the middle button is held down"
-msgstr ""
+msgstr "Mentre es manté premut el botó del mig"
 
 #: src/Views/Pointing.vala:23
 msgid "This disables both levels of keys on the numeric keypad"
@@ -293,37 +291,41 @@ msgstr "grossa"
 msgid "Pressing the control key will highlight the position of the pointer"
 msgstr "Prémer la tecla de control realçarà la posició del punter."
 
-#: src/Views/Touchpad.vala:38
+#: src/Views/Touchpad.vala:41
 msgid "Multitouch"
 msgstr "Multitàctil"
 
-#: src/Views/Touchpad.vala:55
+#: src/Views/Touchpad.vala:58
 msgid "Areas"
 msgstr "Àrees"
 
-#: src/Views/Touchpad.vala:88
+#: src/Views/Touchpad.vala:82
+msgid "Continue dragging if the finger is only lifted briefly"
+msgstr ""
+
+#: src/Views/Touchpad.vala:93
+msgid "Tapping"
+msgstr "Tocs"
+
+#: src/Views/Touchpad.vala:102
 msgid "Two-finger"
 msgstr "Dos dits"
 
-#: src/Views/Touchpad.vala:103
+#: src/Views/Touchpad.vala:117
 msgid "Edge"
 msgstr "Vora"
 
-#: src/Views/Touchpad.vala:134
+#: src/Views/Touchpad.vala:148
 msgid "Ignore"
 msgstr "Ignora"
 
-#: src/Views/Touchpad.vala:136
+#: src/Views/Touchpad.vala:150
 msgid "While typing"
 msgstr "Mentre s'escrigui"
 
-#: src/Views/Touchpad.vala:137
+#: src/Views/Touchpad.vala:151
 msgid "When mouse is connected"
 msgstr "Quan hi hagi un ratolí connectat"
-
-#: src/Views/Touchpad.vala:148
-msgid "Tapping"
-msgstr "Tocs"
 
 #~ msgid "Double-click speed"
 #~ msgstr "Velocitat del clic doble"

@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-28 15:14+0000\n"
-"PO-Revision-Date: 2024-07-01 02:16+0000\n"
+"PO-Revision-Date: 2026-01-29 17:36+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
-"Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-mouse-touchpad/ja/>\n"
+"Language-Team: Japanese <https://l10n.elementaryos.org/projects/settings/"
+"mouse-touchpad/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-02-16 06:46+0000\n"
 
 #: src/Plug.vala:55
@@ -75,14 +75,12 @@ msgstr "ナチュラルスクロール"
 
 #: src/Plug.vala:135 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 #: src/Views/PointingStick.vala:11
-#, fuzzy
-#| msgid "Pointing"
 msgid "Pointing Stick"
-msgstr "ポインティング"
+msgstr "ポインティングスティック"
 
 #: src/Plug.vala:136
 msgid "TrackPoint"
-msgstr ""
+msgstr "トラックポイント"
 
 #: src/Plug.vala:139 src/Plug.vala:151 src/Views/PointingStick.vala:79
 #: src/Views/Touchpad.vala:83
@@ -269,7 +267,7 @@ msgstr "スクロールすると、表示領域ではなくコンテンツが移
 
 #: src/Views/PointingStick.vala:67
 msgid "While the middle button is held down"
-msgstr ""
+msgstr "中央のボタンを押下中"
 
 #: src/Views/Pointing.vala:23
 msgid "This disables both levels of keys on the numeric keypad"

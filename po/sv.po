@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-29 17:40+0000\n"
-"PO-Revision-Date: 2026-01-29 17:36+0000\n"
+"PO-Revision-Date: 2026-01-31 08:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/settings/"
 "mouse-touchpad/sv/>\n"
@@ -301,7 +301,7 @@ msgstr "Områden"
 
 #: src/Views/Touchpad.vala:82
 msgid "Continue dragging if the finger is only lifted briefly"
-msgstr ""
+msgstr "Fortsätt dra om fingret bara lyfts kortvarigt"
 
 #: src/Views/Touchpad.vala:93
 msgid "Tapping"

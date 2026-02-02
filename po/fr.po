@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-29 17:40+0000\n"
-"PO-Revision-Date: 2024-02-07 10:31+0000\n"
+"PO-Revision-Date: 2026-01-31 08:55+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-mouse-touchpad/fr/>\n"
+"Language-Team: French <https://l10n.elementaryos.org/projects/settings/"
+"mouse-touchpad/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-02-16 06:46+0000\n"
 
 #: src/Plug.vala:55
@@ -75,8 +75,6 @@ msgstr "Défilement naturel"
 
 #: src/Plug.vala:135 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 #: src/Views/PointingStick.vala:11
-#, fuzzy
-#| msgid "Pointing"
 msgid "Pointing Stick"
 msgstr "Pointeur"
 
@@ -273,7 +271,7 @@ msgstr "Le défilement déplace le contenu, pas la page"
 
 #: src/Views/PointingStick.vala:67
 msgid "While the middle button is held down"
-msgstr ""
+msgstr "Lorsque le bouton central est maintenu"
 
 #: src/Views/Pointing.vala:23
 msgid "This disables both levels of keys on the numeric keypad"
@@ -306,7 +304,7 @@ msgstr "Zones"
 
 #: src/Views/Touchpad.vala:82
 msgid "Continue dragging if the finger is only lifted briefly"
-msgstr ""
+msgstr "Continuer à faire glisser si le doigt n'est relevé que brièvement"
 
 #: src/Views/Touchpad.vala:93
 msgid "Tapping"

@@ -1,3 +1,9 @@
+io.elementary.settings.mouse-touchpad (8.1.0) noble; urgency=medium
+
+  * Release 8.1.0 (#275)
+
+ -- elementary OS Team <builds@elementary.io>  Thu, 05 Feb 2026 16:58:34 +0000
+
 io.elementary.settings.mouse-touchpad (8.0.3) noble; urgency=medium
 
   * Release 8.0.3 (#261)

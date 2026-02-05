@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-29 17:40+0000\n"
-"PO-Revision-Date: 2026-01-31 08:55+0000\n"
+"PO-Revision-Date: 2026-02-02 17:47+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementaryos.org/projects/settings/"
 "mouse-touchpad/fr/>\n"
@@ -80,7 +80,7 @@ msgstr "Pointeur"
 
 #: src/Plug.vala:136
 msgid "TrackPoint"
-msgstr ""
+msgstr "Point de suivi"
 
 #: src/Plug.vala:139 src/Plug.vala:151 src/Views/PointingStick.vala:79
 #: src/Views/Touchpad.vala:97

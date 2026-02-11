@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-29 17:40+0000\n"
-"PO-Revision-Date: 2026-02-04 11:55+0000\n"
+"PO-Revision-Date: 2026-02-12 03:55+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementaryos.org/projects/settings/"
 "mouse-touchpad/ja/>\n"
@@ -97,7 +97,7 @@ msgstr "ポインターのサイズ"
 
 #: src/Plug.vala:143 src/Views/Pointing.vala:80
 msgid "Reveal Pointer"
-msgstr "ポインターをハイライト"
+msgstr "ポインターを強調表示"
 
 #: src/Plug.vala:144 src/Views/Pointing.vala:22
 msgid "Control Pointer Using Keypad"
@@ -176,9 +176,8 @@ msgstr "ポインターをホバーし続けると自動的にクリックしま
 
 #: src/Views/Clicking.vala:173
 msgid "Middle or three-finger click on an input to paste selected text"
-msgstr ""
-"入力欄の上で中クリックまたは 3 本指のタップをすると、選択されたテキストを貼り"
-"付けます"
+msgstr "入力欄の上で中クリックまたは 3 "
+"本指でタップすると、選択されたテキストを貼り付けます"
 
 #: src/Views/Clicking.vala:223 src/Views/Clicking.vala:228
 #, c-format
@@ -271,7 +270,7 @@ msgstr "中央のボタンを押下中"
 
 #: src/Views/Pointing.vala:23
 msgid "This disables both levels of keys on the numeric keypad"
-msgstr "これはテンキーパッドのキーを無効にします (NumLock 有効・無効問わず)"
+msgstr "これはテンキーパッドのキーを無効にします (NumLock の状態に関係なく)"
 
 #: src/Views/Pointing.vala:42
 msgid "Small"
@@ -287,7 +286,7 @@ msgstr "大"
 
 #: src/Views/Pointing.vala:82
 msgid "Pressing the control key will highlight the position of the pointer"
-msgstr "Ctrl キーを押すと、ポインターの位置がハイライトされます"
+msgstr "Ctrl キーを押すと、ポインターの位置が強調表示されます"
 
 #: src/Views/Touchpad.vala:41
 msgid "Multitouch"

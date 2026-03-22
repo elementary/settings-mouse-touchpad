@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-29 17:40+0000\n"
+"POT-Creation-Date: 2026-03-22 16:58+0000\n"
 "PO-Revision-Date: 2026-01-22 21:55+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://l10n.elementaryos.org/projects/settings/"
@@ -29,27 +29,27 @@ msgstr "Miška in sledilna ploščica"
 msgid "Configure mouse and touchpad"
 msgstr "Nastavitve miške in sledilne ploščice"
 
-#: src/Plug.vala:123 src/Views/Clicking.vala:25
+#: src/Plug.vala:123 src/Views/Clicking.vala:11
 msgid "Clicking"
 msgstr "Klikanje"
 
-#: src/Plug.vala:124 src/Views/Clicking.vala:106
+#: src/Plug.vala:124 src/Views/Clicking.vala:90
 msgid "Double-click Speed"
 msgstr "Hitrost dvoklika"
 
-#: src/Plug.vala:125 src/Views/Clicking.vala:116
+#: src/Plug.vala:125 src/Views/Clicking.vala:100
 msgid "Dwell Click"
 msgstr "Klik s čakanjem"
 
-#: src/Plug.vala:126 src/Views/Clicking.vala:32
+#: src/Plug.vala:126 src/Views/Clicking.vala:50
 msgid "Primary Button"
 msgstr "Primarni gumb"
 
-#: src/Plug.vala:127 src/Views/Clicking.vala:75
+#: src/Plug.vala:127 src/Views/Clicking.vala:59
 msgid "Long-press Secondary Click"
 msgstr "Sekundarni klik z dolgim pritiskom"
 
-#: src/Plug.vala:128 src/Views/Clicking.vala:171
+#: src/Plug.vala:128 src/Views/Clicking.vala:130
 msgid "Middle Click Paste"
 msgstr "Prilepi s srednjim klikom"
 
@@ -149,40 +149,40 @@ msgstr "Menjaj delovno površino"
 msgid "Maximize Window"
 msgstr "Maksimiraj okno"
 
-#: src/Views/Clicking.vala:23
+#: src/Views/Clicking.vala:9
 msgid "Behavior"
 msgstr "Vedenje"
 
 #. / TRANSLATORS: Used as "Primary Button: Left"
-#: src/Views/Clicking.vala:36
+#: src/Views/Clicking.vala:23
 msgctxt "mouse-button"
 msgid "Left"
 msgstr "Levi"
 
 #. / TRANSLATORS: Used as "Primary Button: Right";
-#: src/Views/Clicking.vala:48
+#: src/Views/Clicking.vala:33
 msgctxt "mouse-button"
 msgid "Right"
 msgstr "Desni"
 
-#: src/Views/Clicking.vala:77
+#: src/Views/Clicking.vala:61
 msgid "Long-press and release the primary button to secondary click"
 msgstr "Dolg pritisk in popustitev primarnega gumba za sekundarni klik"
 
-#: src/Views/Clicking.vala:108
+#: src/Views/Clicking.vala:92
 msgid "How quickly two clicks in a row will be treated as a double-click"
 msgstr "Kako hitro bosta dva zaporedna klika obravnavana kot dvoklik"
 
-#: src/Views/Clicking.vala:118
+#: src/Views/Clicking.vala:102
 msgid "Hold the pointer still to automatically click"
 msgstr "Držite kazalec na miru za samodejni klik"
 
-#: src/Views/Clicking.vala:173
+#: src/Views/Clicking.vala:132
 msgid "Middle or three-finger click on an input to paste selected text"
 msgstr ""
 "Srednji ali tri-prstni klik na vnosno vrstico bo prilepil izbrano besedilo"
 
-#: src/Views/Clicking.vala:223 src/Views/Clicking.vala:228
+#: src/Views/Clicking.vala:179 src/Views/Clicking.vala:184
 #, c-format
 msgid "%.1f seconds"
 msgstr "%.1f sekund"

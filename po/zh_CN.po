@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-29 17:40+0000\n"
+"POT-Creation-Date: 2026-03-22 16:58+0000\n"
 "PO-Revision-Date: 2025-08-10 04:55+0000\n"
 "Last-Translator: JieXu <xujie0739@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://"
@@ -29,27 +29,27 @@ msgstr "鼠标和触控"
 msgid "Configure mouse and touchpad"
 msgstr "配置鼠标和触控板"
 
-#: src/Plug.vala:123 src/Views/Clicking.vala:25
+#: src/Plug.vala:123 src/Views/Clicking.vala:11
 msgid "Clicking"
 msgstr "点击"
 
-#: src/Plug.vala:124 src/Views/Clicking.vala:106
+#: src/Plug.vala:124 src/Views/Clicking.vala:90
 msgid "Double-click Speed"
 msgstr "双击速度"
 
-#: src/Plug.vala:125 src/Views/Clicking.vala:116
+#: src/Plug.vala:125 src/Views/Clicking.vala:100
 msgid "Dwell Click"
 msgstr "停留点击"
 
-#: src/Plug.vala:126 src/Views/Clicking.vala:32
+#: src/Plug.vala:126 src/Views/Clicking.vala:50
 msgid "Primary Button"
 msgstr "主按钮"
 
-#: src/Plug.vala:127 src/Views/Clicking.vala:75
+#: src/Plug.vala:127 src/Views/Clicking.vala:59
 msgid "Long-press Secondary Click"
 msgstr "长按为次要点击"
 
-#: src/Plug.vala:128 src/Views/Clicking.vala:171
+#: src/Plug.vala:128 src/Views/Clicking.vala:130
 msgid "Middle Click Paste"
 msgstr "中键点击粘贴"
 
@@ -149,39 +149,39 @@ msgstr "切换工作区"
 msgid "Maximize Window"
 msgstr "窗口最大化"
 
-#: src/Views/Clicking.vala:23
+#: src/Views/Clicking.vala:9
 msgid "Behavior"
 msgstr "行为"
 
 #. / TRANSLATORS: Used as "Primary Button: Left"
-#: src/Views/Clicking.vala:36
+#: src/Views/Clicking.vala:23
 msgctxt "mouse-button"
 msgid "Left"
 msgstr "左声道"
 
 #. / TRANSLATORS: Used as "Primary Button: Right";
-#: src/Views/Clicking.vala:48
+#: src/Views/Clicking.vala:33
 msgctxt "mouse-button"
 msgid "Right"
 msgstr "右声道"
 
-#: src/Views/Clicking.vala:77
+#: src/Views/Clicking.vala:61
 msgid "Long-press and release the primary button to secondary click"
 msgstr "长按并放开主按键将激活二级点击"
 
-#: src/Views/Clicking.vala:108
+#: src/Views/Clicking.vala:92
 msgid "How quickly two clicks in a row will be treated as a double-click"
 msgstr "双击判定间隔的长短"
 
-#: src/Views/Clicking.vala:118
+#: src/Views/Clicking.vala:102
 msgid "Hold the pointer still to automatically click"
 msgstr "保持指针不动激活自动点击"
 
-#: src/Views/Clicking.vala:173
+#: src/Views/Clicking.vala:132
 msgid "Middle or three-finger click on an input to paste selected text"
 msgstr "中键或三指点击将会粘贴选中文本"
 
-#: src/Views/Clicking.vala:223 src/Views/Clicking.vala:228
+#: src/Views/Clicking.vala:179 src/Views/Clicking.vala:184
 #, c-format
 msgid "%.1f seconds"
 msgstr "%.1f秒"

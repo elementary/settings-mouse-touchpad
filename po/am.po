@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mouse-touchpad-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-29 17:40+0000\n"
+"POT-Creation-Date: 2026-03-22 16:58+0000\n"
 "PO-Revision-Date: 2021-04-21 20:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Amharic <https://l10n.elementary.io/projects/switchboard/"
@@ -27,27 +27,27 @@ msgstr ""
 msgid "Configure mouse and touchpad"
 msgstr ""
 
-#: src/Plug.vala:123 src/Views/Clicking.vala:25
+#: src/Plug.vala:123 src/Views/Clicking.vala:11
 msgid "Clicking"
 msgstr ""
 
-#: src/Plug.vala:124 src/Views/Clicking.vala:106
+#: src/Plug.vala:124 src/Views/Clicking.vala:90
 msgid "Double-click Speed"
 msgstr ""
 
-#: src/Plug.vala:125 src/Views/Clicking.vala:116
+#: src/Plug.vala:125 src/Views/Clicking.vala:100
 msgid "Dwell Click"
 msgstr ""
 
-#: src/Plug.vala:126 src/Views/Clicking.vala:32
+#: src/Plug.vala:126 src/Views/Clicking.vala:50
 msgid "Primary Button"
 msgstr ""
 
-#: src/Plug.vala:127 src/Views/Clicking.vala:75
+#: src/Plug.vala:127 src/Views/Clicking.vala:59
 msgid "Long-press Secondary Click"
 msgstr ""
 
-#: src/Plug.vala:128 src/Views/Clicking.vala:171
+#: src/Plug.vala:128 src/Views/Clicking.vala:130
 msgid "Middle Click Paste"
 msgstr ""
 
@@ -145,39 +145,39 @@ msgstr ""
 msgid "Maximize Window"
 msgstr ""
 
-#: src/Views/Clicking.vala:23
+#: src/Views/Clicking.vala:9
 msgid "Behavior"
 msgstr "ባህሪ"
 
 #. / TRANSLATORS: Used as "Primary Button: Left"
-#: src/Views/Clicking.vala:36
+#: src/Views/Clicking.vala:23
 msgctxt "mouse-button"
 msgid "Left"
 msgstr ""
 
 #. / TRANSLATORS: Used as "Primary Button: Right";
-#: src/Views/Clicking.vala:48
+#: src/Views/Clicking.vala:33
 msgctxt "mouse-button"
 msgid "Right"
 msgstr ""
 
-#: src/Views/Clicking.vala:77
+#: src/Views/Clicking.vala:61
 msgid "Long-press and release the primary button to secondary click"
 msgstr ""
 
-#: src/Views/Clicking.vala:108
+#: src/Views/Clicking.vala:92
 msgid "How quickly two clicks in a row will be treated as a double-click"
 msgstr ""
 
-#: src/Views/Clicking.vala:118
+#: src/Views/Clicking.vala:102
 msgid "Hold the pointer still to automatically click"
 msgstr ""
 
-#: src/Views/Clicking.vala:173
+#: src/Views/Clicking.vala:132
 msgid "Middle or three-finger click on an input to paste selected text"
 msgstr ""
 
-#: src/Views/Clicking.vala:223 src/Views/Clicking.vala:228
+#: src/Views/Clicking.vala:179 src/Views/Clicking.vala:184
 #, fuzzy, c-format
 #| msgid "seconds"
 msgid "%.1f seconds"

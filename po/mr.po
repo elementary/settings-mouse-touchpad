@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mouse-touchpad-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-29 17:40+0000\n"
+"POT-Creation-Date: 2026-03-22 16:58+0000\n"
 "PO-Revision-Date: 2024-01-30 16:38+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -27,35 +27,35 @@ msgstr "माऊस आणि टचपॅड"
 msgid "Configure mouse and touchpad"
 msgstr "माउस आणि टचपॅड कॉन्फिगर करा"
 
-#: src/Plug.vala:123 src/Views/Clicking.vala:25
+#: src/Plug.vala:123 src/Views/Clicking.vala:11
 msgid "Clicking"
 msgstr "क्लिक करत आहे"
 
-#: src/Plug.vala:124 src/Views/Clicking.vala:106
+#: src/Plug.vala:124 src/Views/Clicking.vala:90
 #, fuzzy
 #| msgid "Double-click speed"
 msgid "Double-click Speed"
 msgstr "डबल क्लिकचा वेग"
 
-#: src/Plug.vala:125 src/Views/Clicking.vala:116
+#: src/Plug.vala:125 src/Views/Clicking.vala:100
 #, fuzzy
 #| msgid "Dwell click"
 msgid "Dwell Click"
 msgstr "ड्वेल क्लिक"
 
-#: src/Plug.vala:126 src/Views/Clicking.vala:32
+#: src/Plug.vala:126 src/Views/Clicking.vala:50
 #, fuzzy
 #| msgid "Primary button"
 msgid "Primary Button"
 msgstr "प्राथमिक बटण"
 
-#: src/Plug.vala:127 src/Views/Clicking.vala:75
+#: src/Plug.vala:127 src/Views/Clicking.vala:59
 #, fuzzy
 #| msgid "Long-press secondary click"
 msgid "Long-press Secondary Click"
 msgstr "दुय्यम क्लिक दीर्घ-दाब"
 
-#: src/Plug.vala:128 src/Views/Clicking.vala:171
+#: src/Plug.vala:128 src/Views/Clicking.vala:130
 #, fuzzy
 #| msgid "Middle click paste"
 msgid "Middle Click Paste"
@@ -171,39 +171,39 @@ msgstr "वर्कस्पेसेस स्विच करा"
 msgid "Maximize Window"
 msgstr "विंडो मोठी करा"
 
-#: src/Views/Clicking.vala:23
+#: src/Views/Clicking.vala:9
 msgid "Behavior"
 msgstr "वर्तन"
 
 #. / TRANSLATORS: Used as "Primary Button: Left"
-#: src/Views/Clicking.vala:36
+#: src/Views/Clicking.vala:23
 msgctxt "mouse-button"
 msgid "Left"
 msgstr "डावा"
 
 #. / TRANSLATORS: Used as "Primary Button: Right";
-#: src/Views/Clicking.vala:48
+#: src/Views/Clicking.vala:33
 msgctxt "mouse-button"
 msgid "Right"
 msgstr "उजवा"
 
-#: src/Views/Clicking.vala:77
+#: src/Views/Clicking.vala:61
 msgid "Long-press and release the primary button to secondary click"
 msgstr "दुय्यम क्लिक करण्यासाठी प्राथमिक बटण दीर्घकाळ दाबा आणि सोडा"
 
-#: src/Views/Clicking.vala:108
+#: src/Views/Clicking.vala:92
 msgid "How quickly two clicks in a row will be treated as a double-click"
 msgstr "सलग दोन क्लिक किती द्रुतपणे डबल-क्लिक म्हणून मानले जातील"
 
-#: src/Views/Clicking.vala:118
+#: src/Views/Clicking.vala:102
 msgid "Hold the pointer still to automatically click"
 msgstr "आपोआप क्लिक करण्यासाठी पॉईंटर स्थिर ठेवा"
 
-#: src/Views/Clicking.vala:173
+#: src/Views/Clicking.vala:132
 msgid "Middle or three-finger click on an input to paste selected text"
 msgstr "निवडलेला मजकूर पेस्ट करण्यासाठी इनपुटवर मध्यम किंवा तीन-बोट क्लिक करा"
 
-#: src/Views/Clicking.vala:223 src/Views/Clicking.vala:228
+#: src/Views/Clicking.vala:179 src/Views/Clicking.vala:184
 #, fuzzy, c-format
 #| msgid "seconds"
 msgid "%.1f seconds"

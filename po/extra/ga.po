@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-29 17:40+0000\n"
+"POT-Creation-Date: 2026-03-22 16:58+0000\n"
 "PO-Revision-Date: 2018-12-05 09:39-0800\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n==2 ? 1 : 2;\n"
 
 #: data/mouse-touchpad.metainfo.xml.in:10
-msgid "Mouse &amp; Touchpad Settings"
+msgid "Mouse & Touchpad Settings"
 msgstr ""
 
 #: data/mouse-touchpad.metainfo.xml.in:11

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-22 16:58+0000\n"
-"PO-Revision-Date: 2026-06-29 01:01+0000\n"
+"PO-Revision-Date: 2026-06-30 12:56+0000\n"
 "Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek <https://l10n.elementaryos.org/projects/settings/mouse-"
 "touchpad/el/>\n"
@@ -193,7 +193,7 @@ msgstr "Καμία ενέργεια"
 
 #: src/Views/Gestures.vala:36 src/Views/Gestures.vala:47
 msgid "Switch to workspace"
-msgstr ""
+msgstr "Εναλλαγή σε χώρο εργασίας"
 
 #: src/Views/Gestures.vala:37 src/Views/Gestures.vala:48
 msgid "Move active window to workspace"
@@ -206,7 +206,7 @@ msgstr ""
 #: src/Views/Gestures.vala:40 src/Views/Gestures.vala:76
 #: src/Views/Gestures.vala:111
 msgid "Three fingers:"
-msgstr ""
+msgstr "Τρία δάχτυλα:"
 
 #: src/Views/Gestures.vala:51 src/Views/Gestures.vala:85
 #: src/Views/Gestures.vala:120
@@ -215,15 +215,15 @@ msgstr "Τέσσερα δάχτυλα:"
 
 #: src/Views/Gestures.vala:66
 msgid "Swipe Horizontally"
-msgstr ""
+msgstr "Ολίσθηση οριζόντια"
 
 #: src/Views/Gestures.vala:100
 msgid "Swipe Up"
-msgstr ""
+msgstr "Ολίσθηση προς τα πάνω"
 
 #: src/Views/Gestures.vala:109 src/Views/Gestures.vala:118
 msgid "Zoom"
-msgstr "Μεγέθυνση"
+msgstr "Ζουμ"
 
 #: src/Views/Gestures.vala:135
 msgid "Pinch"
@@ -267,7 +267,7 @@ msgstr ""
 
 #: src/Views/PointingStick.vala:67
 msgid "While the middle button is held down"
-msgstr ""
+msgstr "Όσο είναι πατημένο το μεσαίο κουμπί"
 
 #: src/Views/Pointing.vala:23
 msgid "This disables both levels of keys on the numeric keypad"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-22 16:58+0000\n"
-"PO-Revision-Date: 2026-06-29 01:01+0000\n"
+"PO-Revision-Date: 2026-07-25 20:01+0000\n"
 "Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek <https://l10n.elementaryos.org/projects/settings/mouse-"
 "touchpad-plug-extra/el/>\n"
@@ -45,7 +45,7 @@ msgstr "Μικρές ενημερώσεις:"
 #: data/mouse-touchpad.metainfo.xml.in:50
 #: data/mouse-touchpad.metainfo.xml.in:86
 msgid "Improved screen reader compatibility"
-msgstr ""
+msgstr "Βελτιωμένη συμβατότητα με εφαρμογές ανάγνωσης οθόνης"
 
 #: data/mouse-touchpad.metainfo.xml.in:51
 #: data/mouse-touchpad.metainfo.xml.in:64
@@ -74,7 +74,7 @@ msgstr ""
 
 #: data/mouse-touchpad.metainfo.xml.in:110
 msgid "Update for OS 7"
-msgstr ""
+msgstr "Ενημέρωση για το OS 7"
 
 #: data/mouse-touchpad.metainfo.xml.in:118
 #: data/mouse-touchpad.metainfo.xml.in:131

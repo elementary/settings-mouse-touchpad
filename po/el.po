@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-22 16:58+0000\n"
-"PO-Revision-Date: 2026-07-10 14:00+0000\n"
+"PO-Revision-Date: 2026-07-25 20:01+0000\n"
 "Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek <https://l10n.elementaryos.org/projects/settings/mouse-"
 "touchpad/el/>\n"
@@ -142,11 +142,11 @@ msgstr "Προβολή πολυδιεργασίας"
 
 #: src/Plug.vala:159
 msgid "Switch Workspaces"
-msgstr ""
+msgstr "Εναλλαγή χώρων εργασίας"
 
 #: src/Plug.vala:160
 msgid "Maximize Window"
-msgstr ""
+msgstr "Μεγιστοποίηση παραθύρου"
 
 #: src/Views/Clicking.vala:9
 msgid "Behavior"
@@ -231,7 +231,7 @@ msgstr "Τσίμπημα"
 
 #: src/Views/Gestures.vala:162 src/Views/Gestures.vala:163
 msgid "Toggle maximized"
-msgstr ""
+msgstr "Εναλλαγή μεγιστοποίησης"
 
 #: src/Views/Mouse.vala:9 src/Views/PointingStick.vala:9
 msgid "Devices"
@@ -318,10 +318,8 @@ msgid "Ignore"
 msgstr "Παράβλεψη"
 
 #: src/Views/Touchpad.vala:150
-#, fuzzy
-#| msgid "Ignore while typing"
 msgid "While typing"
-msgstr "Αγνόηση κατά την πληκτρολόγηση"
+msgstr "Κατά την πληκτρολόγηση"
 
 #: src/Views/Touchpad.vala:151
 #, fuzzy

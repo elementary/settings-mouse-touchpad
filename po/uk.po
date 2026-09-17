@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-22 16:58+0000\n"
-"PO-Revision-Date: 2026-01-31 08:55+0000\n"
+"PO-Revision-Date: 2026-09-17 23:02+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementaryos.org/projects/settings/"
 "mouse-touchpad/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 2026.5\n"
 "X-Launchpad-Export-Date: 2017-02-20 06:00+0000\n"
 
 #: src/Plug.vala:55
@@ -76,10 +76,8 @@ msgstr "Природне прокручування"
 
 #: src/Plug.vala:135 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 #: src/Views/PointingStick.vala:11
-#, fuzzy
-#| msgid "Pointing"
 msgid "Pointing Stick"
-msgstr "Вказівник"
+msgstr "Вказівна паличка"
 
 #: src/Plug.vala:136
 msgid "TrackPoint"
@@ -271,7 +269,7 @@ msgstr "Прокручування переміщує вміст, а не под
 
 #: src/Views/PointingStick.vala:67
 msgid "While the middle button is held down"
-msgstr ""
+msgstr "Поки затиснута середня кнопка"
 
 #: src/Views/Pointing.vala:23
 msgid "This disables both levels of keys on the numeric keypad"
@@ -303,7 +301,7 @@ msgstr "Ділянки"
 
 #: src/Views/Touchpad.vala:82
 msgid "Continue dragging if the finger is only lifted briefly"
-msgstr ""
+msgstr "Продовжувати перетягування, якщо палець піднято лише на мить"
 
 #: src/Views/Touchpad.vala:93
 msgid "Tapping"

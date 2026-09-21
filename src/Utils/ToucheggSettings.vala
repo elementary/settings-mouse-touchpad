@@ -18,9 +18,6 @@
  * Boston, MA 02110-1301 USA.
  */
 
-using Xml;
-using Xml.XPath;
-
 /**
  * Utility class to configure Touchégg based gestures.
  */

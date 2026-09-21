@@ -61,7 +61,7 @@ public class MouseTouchpad.ToucheggSettings : GLib.Object {
             string config_path = user_config_exists ()
                 ? user_config_path
                 : system_config_path;
-            doc = Parser.parse_file (config_path);
+            doc = Xml.Parser.parse_file (config_path);
 
             if (doc == null) {
                 throw new GLib.IOError.FAILED ("Error parsing config: %s", config_path);
@@ -95,7 +95,7 @@ public class MouseTouchpad.ToucheggSettings : GLib.Object {
             }
 
             string config_path = user_config_path;
-            doc = Parser.parse_file (config_path);
+            doc = Xml.Parser.parse_file (config_path);
 
             if (doc == null) {
                 throw new GLib.IOError.FAILED ("Error parsing config: %s", config_path);
@@ -157,7 +157,7 @@ public class MouseTouchpad.ToucheggSettings : GLib.Object {
     }
 
     private static void append_xml (Xml.Node* node, string xml) throws GLib.IOError.FAILED {
-        Xml.Doc* doc = Parser.read_memory (xml, xml.length);
+        Xml.Doc* doc = Xml.Parser.read_memory (xml, xml.length);
         if (doc == null) {
             throw new GLib.IOError.FAILED ("Error parsing XML string: %s", xml);
         }

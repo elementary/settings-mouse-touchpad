@@ -67,7 +67,7 @@ public class MouseTouchpad.ToucheggSettings : GLib.Object {
                 throw new GLib.IOError.FAILED ("Error parsing config: %s", config_path);
             }
 
-            Context ctx = new Context (doc);
+            var ctx = new Xml.XPath.Context (doc);
             if (ctx == null) {
                 throw new GLib.IOError.FAILED ("Error creating XPath context");
             }
@@ -101,7 +101,7 @@ public class MouseTouchpad.ToucheggSettings : GLib.Object {
                 throw new GLib.IOError.FAILED ("Error parsing config: %s", config_path);
             }
 
-            Context ctx = new Context (doc);
+            var ctx = new Xml.XPath.Context (doc);
             if (ctx == null) {
                 throw new GLib.IOError.FAILED ("Error creating XPath context");
             }
@@ -136,7 +136,7 @@ public class MouseTouchpad.ToucheggSettings : GLib.Object {
         }
     }
 
-    private static void remove_matching_nodes (Context ctx, string xpath_expression) {
+    private static void remove_matching_nodes (Xml.XPath.Context ctx, string xpath_expression) {
         bool done = false;
         while (!done) {
             Xml.XPath.Object* obj = ctx.eval_expression (xpath_expression);

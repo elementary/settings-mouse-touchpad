@@ -22,7 +22,7 @@ shared_module(
         dependency('gio-2.0'),
         dependency('gobject-2.0'),
         dependency('granite-7', version: '>=7.7.0'),
-        dependency('gtk4'),
+        dependency('gtk4', version: '>=4.22.0'),
         dependency('libxml-2.0'),
         switchboard_dep
     ],

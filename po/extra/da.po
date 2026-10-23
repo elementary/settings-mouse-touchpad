@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-22 16:58+0000\n"
-"PO-Revision-Date: 2026-03-23 17:55+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Danish <https://l10n.elementaryos.org/projects/settings/"
-"mouse-touchpad-plug-extra/da/>\n"
+"PO-Revision-Date: 2026-10-24 21:04+0000\n"
+"Last-Translator: CodeBeats <nicholai67@hotmail.com>\n"
+"Language-Team: Danish <https://l10n.elementaryos.org/projects/settings/mouse-"
+"touchpad-plug-extra/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 2026.5\n"
 
 #: data/mouse-touchpad.metainfo.xml.in:10
 msgid "Mouse & Touchpad Settings"
@@ -60,7 +60,7 @@ msgstr "Opdaterede oversættelser"
 
 #: data/mouse-touchpad.metainfo.xml.in:76
 msgid "Sidebar position is now remembered"
-msgstr ""
+msgstr "Sidepanelets placering huskes nu"
 
 #: data/mouse-touchpad.metainfo.xml.in:99
 msgid "Redesigned, easier to read views with more helpful descriptions"

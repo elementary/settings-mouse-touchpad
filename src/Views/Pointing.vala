@@ -50,7 +50,7 @@ public class MouseTouchpad.PointingView : Switchboard.SettingsPage {
             action_target = new Variant.int32 (32),
             child = new Gtk.Image.from_paintable (
                 new Gtk.Svg.from_resource ("/io/elementary/settings/mouse-touchpad/pointing/symbolic.svg") {
-                    weight = 275
+                    weight = 200
                 }
             ) {
                 pixel_size = 32

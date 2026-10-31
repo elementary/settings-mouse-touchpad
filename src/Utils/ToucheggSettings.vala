@@ -18,9 +18,6 @@
  * Boston, MA 02110-1301 USA.
  */
 
-using Xml;
-using Xml.XPath;
-
 /**
  * Utility class to configure Touchégg based gestures.
  */
@@ -64,13 +61,13 @@ public class MouseTouchpad.ToucheggSettings : GLib.Object {
             string config_path = user_config_exists ()
                 ? user_config_path
                 : system_config_path;
-            doc = Parser.parse_file (config_path);
+            doc = Xml.Parser.parse_file (config_path);
 
             if (doc == null) {
                 throw new GLib.IOError.FAILED ("Error parsing config: %s", config_path);
             }
 
-            Context ctx = new Context (doc);
+            var ctx = new Xml.XPath.Context (doc);
             if (ctx == null) {
                 throw new GLib.IOError.FAILED ("Error creating XPath context");
             }
@@ -98,13 +95,13 @@ public class MouseTouchpad.ToucheggSettings : GLib.Object {
             }
 
             string config_path = user_config_path;
-            doc = Parser.parse_file (config_path);
+            doc = Xml.Parser.parse_file (config_path);
 
             if (doc == null) {
                 throw new GLib.IOError.FAILED ("Error parsing config: %s", config_path);
             }
 
-            Context ctx = new Context (doc);
+            var ctx = new Xml.XPath.Context (doc);
             if (ctx == null) {
                 throw new GLib.IOError.FAILED ("Error creating XPath context");
             }
@@ -139,7 +136,7 @@ public class MouseTouchpad.ToucheggSettings : GLib.Object {
         }
     }
 
-    private static void remove_matching_nodes (Context ctx, string xpath_expression) {
+    private static void remove_matching_nodes (Xml.XPath.Context ctx, string xpath_expression) {
         bool done = false;
         while (!done) {
             Xml.XPath.Object* obj = ctx.eval_expression (xpath_expression);
@@ -160,7 +157,7 @@ public class MouseTouchpad.ToucheggSettings : GLib.Object {
     }
 
     private static void append_xml (Xml.Node* node, string xml) throws GLib.IOError.FAILED {
-        Xml.Doc* doc = Parser.read_memory (xml, xml.length);
+        Xml.Doc* doc = Xml.Parser.read_memory (xml, xml.length);
         if (doc == null) {
             throw new GLib.IOError.FAILED ("Error parsing XML string: %s", xml);
         }

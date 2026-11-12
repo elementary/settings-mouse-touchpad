@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-22 16:58+0000\n"
-"PO-Revision-Date: 2026-10-24 21:04+0000\n"
+"PO-Revision-Date: 2026-11-13 21:04+0000\n"
 "Last-Translator: CodeBeats <nicholai67@hotmail.com>\n"
 "Language-Team: Danish <https://l10n.elementaryos.org/projects/settings/mouse-"
 "touchpad-plug-extra/da/>\n"
@@ -40,7 +40,7 @@ msgstr ""
 #: data/mouse-touchpad.metainfo.xml.in:122
 #: data/mouse-touchpad.metainfo.xml.in:135
 msgid "Minor updates:"
-msgstr ""
+msgstr "Mindre opdateringer:"
 
 #: data/mouse-touchpad.metainfo.xml.in:50
 #: data/mouse-touchpad.metainfo.xml.in:86

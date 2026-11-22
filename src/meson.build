@@ -6,7 +6,6 @@ plug_files = files(
     'Views/Pointing.vala',
     'Views/Touchpad.vala',
     'Views/Gestures.vala',
-    'Utils/ToucheggSettings.vala',
 )
 
 switchboard_dep = dependency('switchboard-3')

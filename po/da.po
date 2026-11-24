@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-22 16:58+0000\n"
-"PO-Revision-Date: 2024-01-30 16:38+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-mouse-touchpad/da/>\n"
+"PO-Revision-Date: 2026-11-25 18:05+0000\n"
+"Last-Translator: CodeBeats <nicholai67@hotmail.com>\n"
+"Language-Team: Danish <https://l10n.elementaryos.org/projects/settings/mouse-"
+"touchpad/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 2026.5\n"
 "X-Launchpad-Export-Date: 2017-03-22 07:14+0000\n"
 
 #: src/Plug.vala:55
@@ -33,10 +33,8 @@ msgid "Clicking"
 msgstr "Klikning"
 
 #: src/Plug.vala:124 src/Views/Clicking.vala:90
-#, fuzzy
-#| msgid "Double-click speed"
 msgid "Double-click Speed"
-msgstr "Dobbeltklik hastighed"
+msgstr "Dobbelt klik Hastighed"
 
 #: src/Plug.vala:125 src/Views/Clicking.vala:100
 #, fuzzy
@@ -45,22 +43,16 @@ msgid "Dwell Click"
 msgstr "Dvæle klik"
 
 #: src/Plug.vala:126 src/Views/Clicking.vala:50
-#, fuzzy
-#| msgid "Primary button"
 msgid "Primary Button"
-msgstr "Primærknap"
+msgstr "Primær Knap"
 
 #: src/Plug.vala:127 src/Views/Clicking.vala:59
-#, fuzzy
-#| msgid "Long-press secondary click"
 msgid "Long-press Secondary Click"
-msgstr "Langt tryk på sekundært klik"
+msgstr "Langt tryk for sekundært klik"
 
 #: src/Plug.vala:128 src/Views/Clicking.vala:130
-#, fuzzy
-#| msgid "Middle click paste"
 msgid "Middle Click Paste"
-msgstr "Mellem-klik indsæt"
+msgstr "Indsæt med midterklik"
 
 #: src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
 #: src/Views/Mouse.vala:11
@@ -70,24 +62,18 @@ msgstr "Mus"
 #: src/Plug.vala:131 src/Plug.vala:137 src/Plug.vala:147
 #: src/Views/Mouse.vala:27 src/Views/PointingStick.vala:27
 #: src/Views/Touchpad.vala:31
-#, fuzzy
-#| msgid "Pointer speed"
 msgid "Pointer Speed"
 msgstr "Markørhastighed"
 
 #: src/Plug.vala:132 src/Plug.vala:138 src/Views/Mouse.vala:46
 #: src/Views/PointingStick.vala:53
-#, fuzzy
-#| msgid "Pointer acceleration"
 msgid "Pointer Acceleration"
-msgstr "Markør acceleration"
+msgstr "Markør Acceleration"
 
 #: src/Plug.vala:133 src/Plug.vala:152 src/Views/Mouse.vala:56
 #: src/Views/Touchpad.vala:137
-#, fuzzy
-#| msgid "Natural scrolling"
 msgid "Natural Scrolling"
-msgstr "Naturlig scrolling"
+msgstr "Naturlig Scrolling"
 
 #: src/Plug.vala:135 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 #: src/Views/PointingStick.vala:11
@@ -103,23 +89,19 @@ msgstr ""
 #: src/Plug.vala:139 src/Plug.vala:151 src/Views/PointingStick.vala:79
 #: src/Views/Touchpad.vala:97
 msgid "Scroll Method"
-msgstr ""
+msgstr "Scroll Metode"
 
 #: src/Plug.vala:141 src/Views/Pointing.vala:10
 msgid "Pointing"
 msgstr "Pegning"
 
 #: src/Plug.vala:142 src/Views/Pointing.vala:71
-#, fuzzy
-#| msgid "Pointer size"
 msgid "Pointer Size"
-msgstr "Markør størrelse"
+msgstr "Markør Størrelse"
 
 #: src/Plug.vala:143 src/Views/Pointing.vala:80
-#, fuzzy
-#| msgid "Reveal pointer"
 msgid "Reveal Pointer"
-msgstr "Fremhæv markør"
+msgstr "Fremhæv Markør"
 
 #: src/Plug.vala:144 src/Views/Pointing.vala:22
 #, fuzzy
@@ -139,13 +121,11 @@ msgstr "Tryk for at klikke"
 
 #: src/Plug.vala:149 src/Views/Touchpad.vala:78
 msgid "Double-tap and move to drag"
-msgstr ""
+msgstr "Dobbelttryk og bevæg for at trække"
 
 #: src/Plug.vala:150 src/Views/Touchpad.vala:68
-#, fuzzy
-#| msgid "Physical clicking:"
 msgid "Physical Secondary Clicking"
-msgstr "Fysisk klik:"
+msgstr "Fysisk Sekundært Klik"
 
 #: src/Plug.vala:153
 msgid "Ignore while typing"
@@ -166,11 +146,11 @@ msgstr "Multitasking"
 
 #: src/Plug.vala:159
 msgid "Switch Workspaces"
-msgstr ""
+msgstr "Skift Arbejdsområder"
 
 #: src/Plug.vala:160
 msgid "Maximize Window"
-msgstr ""
+msgstr "Maksimer Vindue"
 
 #: src/Views/Clicking.vala:9
 msgid "Behavior"
@@ -205,10 +185,9 @@ msgid "Middle or three-finger click on an input to paste selected text"
 msgstr "Mellem- eller trefingers klik på et input vil indsætte markeret tekst"
 
 #: src/Views/Clicking.vala:179 src/Views/Clicking.vala:184
-#, fuzzy, c-format
-#| msgid "seconds"
+#, c-format
 msgid "%.1f seconds"
-msgstr "sekunder"
+msgstr "%.1f sekunder"
 
 #: src/Views/Gestures.vala:35 src/Views/Gestures.vala:46
 #: src/Views/Gestures.vala:73 src/Views/Gestures.vala:82
@@ -218,11 +197,11 @@ msgstr "Gør intet"
 
 #: src/Views/Gestures.vala:36 src/Views/Gestures.vala:47
 msgid "Switch to workspace"
-msgstr ""
+msgstr "Skift til arbejdsområde"
 
 #: src/Views/Gestures.vala:37 src/Views/Gestures.vala:48
 msgid "Move active window to workspace"
-msgstr ""
+msgstr "Flyt aktivt vindue til arbejdsområde"
 
 #: src/Views/Gestures.vala:38 src/Views/Gestures.vala:49
 msgid "Cycle windows"
@@ -231,22 +210,20 @@ msgstr ""
 #: src/Views/Gestures.vala:40 src/Views/Gestures.vala:76
 #: src/Views/Gestures.vala:111
 msgid "Three fingers:"
-msgstr ""
+msgstr "Tre fingre:"
 
 #: src/Views/Gestures.vala:51 src/Views/Gestures.vala:85
 #: src/Views/Gestures.vala:120
-#, fuzzy
-#| msgid "Two-finger"
 msgid "Four fingers:"
-msgstr "To-finger"
+msgstr "Fire fingre:"
 
 #: src/Views/Gestures.vala:66
 msgid "Swipe Horizontally"
-msgstr ""
+msgstr "Stryg Vandret"
 
 #: src/Views/Gestures.vala:100
 msgid "Swipe Up"
-msgstr ""
+msgstr "Stryg Op"
 
 #: src/Views/Gestures.vala:109 src/Views/Gestures.vala:118
 msgid "Zoom"
@@ -254,11 +231,11 @@ msgstr "Zoom"
 
 #: src/Views/Gestures.vala:135
 msgid "Pinch"
-msgstr ""
+msgstr "Knibe"
 
 #: src/Views/Gestures.vala:162 src/Views/Gestures.vala:163
 msgid "Toggle maximized"
-msgstr ""
+msgstr "Slå maksimeret til/fra"
 
 #: src/Views/Mouse.vala:9 src/Views/PointingStick.vala:9
 msgid "Devices"
@@ -267,12 +244,12 @@ msgstr "Enheder"
 #: src/Views/Mouse.vala:23 src/Views/PointingStick.vala:23
 #: src/Views/Pointing.vala:32 src/Views/Touchpad.vala:27
 msgid "Slower"
-msgstr ""
+msgstr "Langsommere"
 
 #: src/Views/Mouse.vala:25 src/Views/PointingStick.vala:25
 #: src/Views/Pointing.vala:34 src/Views/Touchpad.vala:29
 msgid "Faster"
-msgstr ""
+msgstr "Hurtigere"
 
 #: src/Views/Mouse.vala:31 src/Views/PointingStick.vala:31
 #: src/Views/PointingStick.vala:57
@@ -290,11 +267,11 @@ msgstr "Adaptiv"
 
 #: src/Views/Mouse.vala:58 src/Views/Touchpad.vala:139
 msgid "Scrolling moves the content, not the view"
-msgstr ""
+msgstr "Rulning flytter indholdet, ikke visningen"
 
 #: src/Views/PointingStick.vala:67
 msgid "While the middle button is held down"
-msgstr ""
+msgstr "Mens den midterste knap holdes nede"
 
 #: src/Views/Pointing.vala:23
 msgid "This disables both levels of keys on the numeric keypad"
@@ -322,11 +299,11 @@ msgstr "Multitouch"
 
 #: src/Views/Touchpad.vala:58
 msgid "Areas"
-msgstr ""
+msgstr "Områder"
 
 #: src/Views/Touchpad.vala:82
 msgid "Continue dragging if the finger is only lifted briefly"
-msgstr ""
+msgstr "Fortsæt med at trække, hvis fingeren kun løftes kortvarigt"
 
 #: src/Views/Touchpad.vala:93
 msgid "Tapping"
@@ -342,19 +319,15 @@ msgstr "Kant"
 
 #: src/Views/Touchpad.vala:148
 msgid "Ignore"
-msgstr ""
+msgstr "Ignorer"
 
 #: src/Views/Touchpad.vala:150
-#, fuzzy
-#| msgid "Ignore while typing"
 msgid "While typing"
-msgstr "Ignorer mens der skrives"
+msgstr "Mens der skrives"
 
 #: src/Views/Touchpad.vala:151
-#, fuzzy
-#| msgid "Ignore when mouse is connected"
 msgid "When mouse is connected"
-msgstr "Ignorer når en mus er tilsluttet"
+msgstr "Når en mus er tilsluttet"
 
 #~ msgid "Double-click speed"
 #~ msgstr "Dobbeltklik hastighed"

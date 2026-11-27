@@ -15,7 +15,10 @@ Homepage: https://github.com/elementary/switchboard-plug-mouse-touchpad
 
 Package: io.elementary.settings.mouse-touchpad
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends:
+  gala,
+  ${shlibs:Depends},
+  ${misc:Depends}
 Enhances: switchboard
 Description: Mouse/Touchpad plug for Switchboard
  This plug configures mouse and touchpad.

@@ -72,6 +72,7 @@ public class MouseTouchpad.GesturesView : Switchboard.SettingsPage {
         };
         three_swipe_up_combo.append ("none", _("Do nothing"));
         three_swipe_up_combo.append ("multitasking-view", _("Multitasking View"));
+        three_swipe_up_combo.append ("toggle-maximized", _("Toggle maximized"));
 
         var three_swipe_up_label = new Gtk.Label (_("Three fingers:")) {
             halign = END,
@@ -81,6 +82,7 @@ public class MouseTouchpad.GesturesView : Switchboard.SettingsPage {
         var four_swipe_up_combo = new Gtk.ComboBoxText ();
         four_swipe_up_combo.append ("none", _("Do nothing"));
         four_swipe_up_combo.append ("multitasking-view", _("Multitasking View"));
+        four_swipe_up_combo.append ("toggle-maximized", _("Toggle maximized"));
 
         var four_swipe_up_label = new Gtk.Label (_("Four fingers:")) {
             halign = END,
@@ -154,33 +156,5 @@ public class MouseTouchpad.GesturesView : Switchboard.SettingsPage {
         glib_settings.bind ("four-finger-swipe-up", four_swipe_up_combo, "active-id", GLib.SettingsBindFlags.DEFAULT);
         glib_settings.bind ("three-finger-pinch", three_pinch_combo, "active-id", GLib.SettingsBindFlags.DEFAULT);
         glib_settings.bind ("four-finger-pinch", four_pinch_combo, "active-id", GLib.SettingsBindFlags.DEFAULT);
-
-        var touchegg_settings = new ToucheggSettings ();
-        touchegg_settings.parse_config ();
-
-        if (!touchegg_settings.errors) {
-            three_swipe_up_combo.append ("toggle-maximized", _("Toggle maximized"));
-            four_swipe_up_combo.append ("toggle-maximized", _("Toggle maximized"));
-
-            touchegg_settings.set_maximize_settings (
-                glib_settings.get_string ("three-finger-swipe-up") == "toggle-maximized", 3
-            );
-
-            touchegg_settings.set_maximize_settings (
-                glib_settings.get_string ("four-finger-swipe-up") == "toggle-maximized", 4
-            );
-
-            glib_settings.changed["three-finger-swipe-up"].connect (() => {
-                touchegg_settings.set_maximize_settings (
-                    glib_settings.get_string ("three-finger-swipe-up") == "toggle-maximized", 3
-                );
-            });
-
-            glib_settings.changed["four-finger-swipe-up"].connect (() => {
-                touchegg_settings.set_maximize_settings (
-                    glib_settings.get_string ("four-finger-swipe-up") == "toggle-maximized", 4
-                );
-            });
-        }
     }
 }

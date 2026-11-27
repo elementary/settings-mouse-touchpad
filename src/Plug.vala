@@ -27,11 +27,6 @@ public class MouseTouchpad.Plug : Switchboard.Plug {
     private PointingView pointing_view;
     private TouchpadView touchpad_view;
     private GesturesView gestures_view;
-    private bool show_gestures_view;
-
-    construct {
-        show_gestures_view = new ToucheggSettings ().is_installed ();
-    }
 
     public Plug () {
         GLib.Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
@@ -68,16 +63,12 @@ public class MouseTouchpad.Plug : Switchboard.Plug {
             pointing_view = new PointingView ();
             pointingstick_view = new PointingStickView ();
             touchpad_view = new TouchpadView ();
+            gestures_view = new GesturesView ();
 
             stack = new Gtk.Stack ();
             stack.add_named (clicking_view, "clicking");
             stack.add_named (pointing_view, "pointing");
-
-            if (show_gestures_view) {
-                gestures_view = new GesturesView ();
-                stack.add_named (gestures_view, "gestures");
-            }
-
+            stack.add_named (gestures_view, "gestures");
             stack.add_named (mouse_view, "mouse");
             stack.add_named (pointingstick_view, "pointingstick");
             stack.add_named (touchpad_view, "touchpad");
@@ -153,12 +144,10 @@ public class MouseTouchpad.Plug : Switchboard.Plug {
         search_results.set ("%s → %s → %s".printf (display_name, _("Touchpad"), _("Ignore while typing")), "touchpad");
         search_results.set ("%s → %s → %s".printf (display_name, _("Touchpad"), _("Ignore when mouse is connected")), "touchpad");
 
-        if (show_gestures_view) {
-            search_results.set ("%s → %s".printf (display_name, _("Gestures")), "gestures");
-            search_results.set ("%s → %s → %s".printf (display_name, _("Gestures"), _("Multitasking View")), "gestures");
-            search_results.set ("%s → %s → %s".printf (display_name, _("Gestures"), _("Switch Workspaces")), "gestures");
-            search_results.set ("%s → %s → %s".printf (display_name, _("Gestures"), _("Maximize Window")), "gestures");
-        }
+        search_results.set ("%s → %s".printf (display_name, _("Gestures")), "gestures");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Gestures"), _("Multitasking View")), "gestures");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Gestures"), _("Switch Workspaces")), "gestures");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Gestures"), _("Maximize Window")), "gestures");
 
         return search_results;
     }

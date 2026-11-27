@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-mouse-touchpad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-22 16:58+0000\n"
+"POT-Creation-Date: 2026-11-27 17:39+0000\n"
 "PO-Revision-Date: 2024-02-02 21:11+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -21,131 +21,131 @@ msgstr ""
 "X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-02-16 06:46+0000\n"
 
-#: src/Plug.vala:55
+#: src/Plug.vala:50
 msgid "Mouse & Touchpad"
 msgstr "Myszka i panel dotykowy"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:51
 msgid "Configure mouse and touchpad"
 msgstr "Skonfiguruj myszkę i panel dotykowy"
 
-#: src/Plug.vala:123 src/Views/Clicking.vala:11
+#: src/Plug.vala:114 src/Views/Clicking.vala:11
 msgid "Clicking"
 msgstr "Klikanie"
 
-#: src/Plug.vala:124 src/Views/Clicking.vala:90
+#: src/Plug.vala:115 src/Views/Clicking.vala:90
 msgid "Double-click Speed"
 msgstr "Prędkość podwójnego klikania"
 
-#: src/Plug.vala:125 src/Views/Clicking.vala:100
+#: src/Plug.vala:116 src/Views/Clicking.vala:100
 msgid "Dwell Click"
 msgstr "Trwające kliknięcie"
 
-#: src/Plug.vala:126 src/Views/Clicking.vala:50
+#: src/Plug.vala:117 src/Views/Clicking.vala:50
 msgid "Primary Button"
 msgstr "Główny przycisk"
 
-#: src/Plug.vala:127 src/Views/Clicking.vala:59
+#: src/Plug.vala:118 src/Views/Clicking.vala:59
 msgid "Long-press Secondary Click"
 msgstr "Długie przytrzymanie kliknięcia prawym przyciskiem myszy"
 
-#: src/Plug.vala:128 src/Views/Clicking.vala:130
+#: src/Plug.vala:119 src/Views/Clicking.vala:130
 msgid "Middle Click Paste"
 msgstr "Wklejenie poprzez kliknięcie środkowym przyciskiem"
 
-#: src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
+#: src/Plug.vala:121 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 #: src/Views/Mouse.vala:11
 msgid "Mouse"
 msgstr "Myszka"
 
-#: src/Plug.vala:131 src/Plug.vala:137 src/Plug.vala:147
+#: src/Plug.vala:122 src/Plug.vala:128 src/Plug.vala:138
 #: src/Views/Mouse.vala:27 src/Views/PointingStick.vala:27
 #: src/Views/Touchpad.vala:31
 msgid "Pointer Speed"
 msgstr "Szybkość wskaźnika"
 
-#: src/Plug.vala:132 src/Plug.vala:138 src/Views/Mouse.vala:46
+#: src/Plug.vala:123 src/Plug.vala:129 src/Views/Mouse.vala:46
 #: src/Views/PointingStick.vala:53
 msgid "Pointer Acceleration"
 msgstr "Przyspieszenie wskaźnika"
 
-#: src/Plug.vala:133 src/Plug.vala:152 src/Views/Mouse.vala:56
+#: src/Plug.vala:124 src/Plug.vala:143 src/Views/Mouse.vala:56
 #: src/Views/Touchpad.vala:137
 msgid "Natural Scrolling"
 msgstr "Przewijanie naturalne"
 
-#: src/Plug.vala:135 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
+#: src/Plug.vala:126 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
 #: src/Views/PointingStick.vala:11
 #, fuzzy
 #| msgid "Pointing"
 msgid "Pointing Stick"
 msgstr "Wskazywanie"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:127
 msgid "TrackPoint"
 msgstr ""
 
-#: src/Plug.vala:139 src/Plug.vala:151 src/Views/PointingStick.vala:79
+#: src/Plug.vala:130 src/Plug.vala:142 src/Views/PointingStick.vala:79
 #: src/Views/Touchpad.vala:97
 msgid "Scroll Method"
 msgstr "Metoda przewijania"
 
-#: src/Plug.vala:141 src/Views/Pointing.vala:10
+#: src/Plug.vala:132 src/Views/Pointing.vala:10
 msgid "Pointing"
 msgstr "Wskazywanie"
 
-#: src/Plug.vala:142 src/Views/Pointing.vala:71
+#: src/Plug.vala:133 src/Views/Pointing.vala:81
 msgid "Pointer Size"
 msgstr "Rozmiar wskaźnika"
 
-#: src/Plug.vala:143 src/Views/Pointing.vala:80
+#: src/Plug.vala:134 src/Views/Pointing.vala:90
 msgid "Reveal Pointer"
 msgstr "Pokaż wskaźnik"
 
-#: src/Plug.vala:144 src/Views/Pointing.vala:22
+#: src/Plug.vala:135 src/Views/Pointing.vala:22
 msgid "Control Pointer Using Keypad"
 msgstr "Poruszaj wskaźnikiem przy użyciu klawiatury numerycznej"
 
-#: src/Plug.vala:146 src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149
-#: src/Plug.vala:150 src/Plug.vala:151 src/Plug.vala:152 src/Plug.vala:153
-#: src/Plug.vala:154 src/Views/Touchpad.vala:13
+#: src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
+#: src/Plug.vala:141 src/Plug.vala:142 src/Plug.vala:143 src/Plug.vala:144
+#: src/Plug.vala:145 src/Views/Touchpad.vala:13
 msgid "Touchpad"
 msgstr "Panel dotykowy"
 
-#: src/Plug.vala:148 src/Views/Touchpad.vala:74
+#: src/Plug.vala:139 src/Views/Touchpad.vala:74
 msgid "Tap to click"
 msgstr "Stuknij, aby kliknąć"
 
-#: src/Plug.vala:149 src/Views/Touchpad.vala:78
+#: src/Plug.vala:140 src/Views/Touchpad.vala:78
 msgid "Double-tap and move to drag"
 msgstr "Kliknij dwukrotnie i przesuń by przeciągnąć"
 
-#: src/Plug.vala:150 src/Views/Touchpad.vala:68
+#: src/Plug.vala:141 src/Views/Touchpad.vala:68
 msgid "Physical Secondary Clicking"
 msgstr "Fizyczne drugorzędne kliknięcie"
 
-#: src/Plug.vala:153
+#: src/Plug.vala:144
 msgid "Ignore while typing"
 msgstr "Wyłącz podczas pisania"
 
-#: src/Plug.vala:154
+#: src/Plug.vala:145
 msgid "Ignore when mouse is connected"
 msgstr "Ignoruj, gdy podłączona jest myszka"
 
-#: src/Plug.vala:157 src/Plug.vala:158 src/Plug.vala:159 src/Plug.vala:160
+#: src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149 src/Plug.vala:150
 #: src/Views/Gestures.vala:25
 msgid "Gestures"
 msgstr "Gesty"
 
-#: src/Plug.vala:158 src/Views/Gestures.vala:74 src/Views/Gestures.vala:83
+#: src/Plug.vala:148 src/Views/Gestures.vala:74 src/Views/Gestures.vala:84
 msgid "Multitasking View"
 msgstr "Podgląd wielozadaniowy"
 
-#: src/Plug.vala:159
+#: src/Plug.vala:149
 msgid "Switch Workspaces"
 msgstr "Przełącz obszary robocze"
 
-#: src/Plug.vala:160
+#: src/Plug.vala:150
 msgid "Maximize Window"
 msgstr "Maksymalizuj okno"
 
@@ -192,8 +192,8 @@ msgid "%.1f seconds"
 msgstr "%.1f sekundy"
 
 #: src/Views/Gestures.vala:35 src/Views/Gestures.vala:46
-#: src/Views/Gestures.vala:73 src/Views/Gestures.vala:82
-#: src/Views/Gestures.vala:108 src/Views/Gestures.vala:117
+#: src/Views/Gestures.vala:73 src/Views/Gestures.vala:83
+#: src/Views/Gestures.vala:110 src/Views/Gestures.vala:119
 msgid "Do nothing"
 msgstr "Brak czynności"
 
@@ -209,13 +209,13 @@ msgstr "Przenieś aktywne okno na obszar roboczy"
 msgid "Cycle windows"
 msgstr "Przełącz między oknami"
 
-#: src/Views/Gestures.vala:40 src/Views/Gestures.vala:76
-#: src/Views/Gestures.vala:111
+#: src/Views/Gestures.vala:40 src/Views/Gestures.vala:77
+#: src/Views/Gestures.vala:113
 msgid "Three fingers:"
 msgstr "Trzy palce:"
 
-#: src/Views/Gestures.vala:51 src/Views/Gestures.vala:85
-#: src/Views/Gestures.vala:120
+#: src/Views/Gestures.vala:51 src/Views/Gestures.vala:87
+#: src/Views/Gestures.vala:122
 msgid "Four fingers:"
 msgstr "Cztery palce:"
 
@@ -223,21 +223,21 @@ msgstr "Cztery palce:"
 msgid "Swipe Horizontally"
 msgstr "Przesunięcie poziome"
 
-#: src/Views/Gestures.vala:100
+#: src/Views/Gestures.vala:75 src/Views/Gestures.vala:85
+msgid "Toggle maximized"
+msgstr "Przełącz zmaksymalizowane"
+
+#: src/Views/Gestures.vala:102
 msgid "Swipe Up"
 msgstr "Przesunięcie w górę"
 
-#: src/Views/Gestures.vala:109 src/Views/Gestures.vala:118
+#: src/Views/Gestures.vala:111 src/Views/Gestures.vala:120
 msgid "Zoom"
 msgstr "Przybliżenie"
 
-#: src/Views/Gestures.vala:135
+#: src/Views/Gestures.vala:137
 msgid "Pinch"
 msgstr "Uszczypnięcie"
-
-#: src/Views/Gestures.vala:162 src/Views/Gestures.vala:163
-msgid "Toggle maximized"
-msgstr "Przełącz zmaksymalizowane"
 
 #: src/Views/Mouse.vala:9 src/Views/PointingStick.vala:9
 msgid "Devices"
@@ -279,19 +279,19 @@ msgstr ""
 msgid "This disables both levels of keys on the numeric keypad"
 msgstr "Wyłączy to oba poziomy przycisków na klawiaturze numerycznej"
 
-#: src/Views/Pointing.vala:42
+#: src/Views/Pointing.vala:44
 msgid "Small"
 msgstr "Mały"
 
-#: src/Views/Pointing.vala:52
+#: src/Views/Pointing.vala:58
 msgid "Medium"
 msgstr "Średni"
 
-#: src/Views/Pointing.vala:62
+#: src/Views/Pointing.vala:72
 msgid "Large"
 msgstr "Duży"
 
-#: src/Views/Pointing.vala:82
+#: src/Views/Pointing.vala:92
 msgid "Pressing the control key will highlight the position of the pointer"
 msgstr "Naciśnięcie przycisku kontrolnego zaznaczy pozycję wskaźnika"
 
